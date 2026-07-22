@@ -442,7 +442,7 @@ if __name__ == "__main__":
     if mode == "sse" or "PORT" in os.environ:
         _log_structured("INFO", f"Starting Google Meridian MCP Server in SSE Mode on 0.0.0.0:{port}")
         import uvicorn
-        from starlette.responses import JSONResponse, Response
+        from starlette.responses import JSONResponse, Response, PlainTextResponse
 
         sse_app = mcp.sse_app()
 
@@ -450,6 +450,18 @@ if __name__ == "__main__":
             if scope["type"] == "http":
                 path = scope["path"]
                 method = scope["method"]
+
+                # Handle DELETE /sse reset requests cleanly
+                if method == "DELETE":
+                    response = Response(status_code=204)
+                    await response(scope, receive, send)
+                    return
+
+                # Handle OAuth discovery probes gracefully
+                if ".well-known" in path:
+                    response = JSONResponse({"status": "no_auth_required"}, status_code=200)
+                    await response(scope, receive, send)
+                    return
 
                 # Health Check
                 if path == "/health":
@@ -485,7 +497,6 @@ if __name__ == "__main__":
                 # Direct HTTP POST JSON-RPC Request Handler (for clients sending POST directly)
                 if method == "POST":
                     try:
-                        # Read request body
                         body_bytes = b""
                         while True:
                             message = await receive()
