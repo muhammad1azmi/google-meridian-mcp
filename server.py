@@ -246,6 +246,31 @@ if __name__ == "__main__":
     
     if mode == "sse" or "PORT" in os.environ:
         print(f"Starting Google Meridian MCP Server in SSE Mode on 0.0.0.0:{port}...")
-        mcp.run(transport="sse", host="0.0.0.0", port=port)
+        import uvicorn
+        from starlette.applications import Starlette
+        from starlette.responses import JSONResponse, PlainTextResponse
+        from starlette.routing import Route
+
+        sse_app = mcp.sse_app()
+
+        async def homepage(request):
+            return JSONResponse({
+                "status": "online",
+                "server": "google-meridian-mcp",
+                "mcp_version": "1.0.0",
+                "sse_endpoint": "/sse",
+                "messages_endpoint": "/messages/"
+            })
+
+        async def health(request):
+            return PlainTextResponse("OK", status_code=200)
+
+        routes = [
+            Route("/", endpoint=homepage),
+            Route("/health", endpoint=health),
+        ] + sse_app.routes
+
+        app = Starlette(debug=False, routes=routes)
+        uvicorn.run(app, host="0.0.0.0", port=port)
     else:
         mcp.run()
