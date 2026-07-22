@@ -33,7 +33,7 @@ jobs:
   deploy:
     name: Deploy MCP Server to Cloud Run
     needs: test
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && secrets.GCP_SA_KEY != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
