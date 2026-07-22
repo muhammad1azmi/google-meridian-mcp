@@ -3,7 +3,8 @@ Google Meridian MCP Server (google-meridian-mcp).
 
 Provides tools for AI assistants to discover, search, fetch, and parse
 Google Meridian documentation, API reference pages, and GitHub source code.
-Features enterprise structured logging, Prometheus metrics, and rate limiting.
+Features enterprise structured logging, Prometheus metrics, rate limiting,
+and multi-transport HTTP/SSE JSON-RPC message routing.
 """
 
 import os
@@ -72,9 +73,8 @@ def _log_structured(severity: str, message: str, **kwargs):
 
 def _is_url_allowed(url: str) -> bool:
     """Verifies that the requested URL belongs to authorized Google / GitHub domains and prevents SSRF."""
-    # Block internal IP ranges and Cloud metadata endpoints
     blocked_patterns = [
-        r"169\.254\.169\.254", # Cloud Metadata Service
+        r"169\.254\.169\.254",
         r"10\.\d+\.\d+\.\d+",
         r"192\.168\.\d+\.\d+",
         r"127\.0\.0\.1",
@@ -343,7 +343,7 @@ if __name__ == "__main__":
         import uvicorn
         from starlette.applications import Starlette
         from starlette.responses import JSONResponse, PlainTextResponse, Response
-        from starlette.routing import Route
+        from starlette.routing import Route, Mount
         from starlette.middleware import Middleware
         from starlette.middleware.base import BaseHTTPMiddleware
 
@@ -352,6 +352,10 @@ if __name__ == "__main__":
         # IP Rate Limiting Middleware (100 req/min)
         class RateLimitMiddleware(BaseHTTPMiddleware):
             async def dispatch(self, request, call_next):
+                # Exclude health and root metrics from rate limiting
+                if request.url.path in ["/", "/health", "/metrics"]:
+                    return await call_next(request)
+
                 client_ip = request.client.host if request.client else "unknown"
                 now = time.time()
                 
@@ -371,6 +375,9 @@ if __name__ == "__main__":
                 return await call_next(request)
 
         async def homepage(request):
+            if request.method == "POST":
+                # Route POST to SSE message handler
+                return await sse_app(request.scope, request.receive, request.send)
             return JSONResponse({
                 "status": "online",
                 "server": "google-meridian-mcp",
@@ -381,6 +388,9 @@ if __name__ == "__main__":
                 "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
                 "cache_size_items": len(list(CACHE_DIR.glob("*.md")))
             })
+
+        async def sse_handler(request):
+            return await sse_app(request.scope, request.receive, request.send)
 
         async def health(request):
             return JSONResponse({
@@ -393,10 +403,14 @@ if __name__ == "__main__":
             return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
         routes = [
-            Route("/", endpoint=homepage),
-            Route("/health", endpoint=health),
-            Route("/metrics", endpoint=metrics),
-        ] + sse_app.routes
+            Route("/", endpoint=homepage, methods=["GET", "POST"]),
+            Route("/sse", endpoint=sse_handler, methods=["GET", "POST"]),
+            Route("/messages", endpoint=sse_handler, methods=["POST"]),
+            Route("/messages/", endpoint=sse_handler, methods=["POST"]),
+            Route("/health", endpoint=health, methods=["GET"]),
+            Route("/metrics", endpoint=metrics, methods=["GET"]),
+            Mount("/mcp", app=sse_app)
+        ]
 
         middleware = [
             Middleware(RateLimitMiddleware)
