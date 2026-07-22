@@ -1,20 +1,40 @@
 # Google Meridian MCP Server (`google-meridian-mcp`)
 
-A high-performance Model Context Protocol (MCP) server for **Google Meridian** (Marketing Mix Modeling), providing AI assistants with structured access to official guides, API references, topic searching, and GitHub source code.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![MCP Standard](https://img.shields.io/badge/MCP-Standard-green.svg)](https://modelcontextprotocol.io)
+
+An open-source Model Context Protocol (MCP) server for **Google Meridian** (Marketing Mix Modeling). It provides AI assistants (like Cursor, Claude Desktop, and Gemini / Antigravity) with structured access to official guides, API references, topic searching, and GitHub source code.
 
 ---
 
-## Features
+## ⚡ Quick Connect (Remote SSE Mode)
+
+You can use the live public remote MCP server without installing anything locally! Simply add this to your IDE's `mcp_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "google-meridian": {
+      "url": "https://google-meridian.mcp.borobudur.ai/sse"
+    }
+  }
+}
+```
+
+---
+
+## ✨ Features
 
 - **Multi-Category Indexing**: Complete hierarchical index across User Guides, Pre-Modeling, Model Specification & Fitting, Post-Modeling & Optimization, Advanced Modeling, API References, and GitHub Code.
 - **Dynamic HTML ➔ Markdown Parser**: Converts Google Developer HTML documentation pages into clean, boilerplate-free Markdown.
 - **GitHub & Jupyter Notebook Parser**: Renders raw `.py` code files and `.ipynb` Jupyter demo notebooks into readable Markdown.
 - **Topic Search Engine (`search_doc_topics`)**: Instant keyword/topic matching for concepts like *Adstock*, *Hill curves*, *NUTS sampling*, *Prior calibration*, and *BudgetOptimizer*.
-- **Local Disk Cache**: Fast response times and offline reliability via `.cache/`.
+- **Observability & Security**: Built-in Prometheus metrics (`/metrics`), structured Cloud logging, and IP rate limiting for public cost protection.
 
 ---
 
-## Available Tools
+## 🛠️ Available Tools
 
 | Tool | Parameters | Description |
 | :--- | :--- | :--- |
@@ -24,18 +44,18 @@ A high-performance Model Context Protocol (MCP) server for **Google Meridian** (
 
 ---
 
-## Usage & IDE Integration
+## 💻 Local Setup & Running
 
-### Local Usage (Stdio Mode)
-
-To run locally with Python:
-
+### Option A: Python Setup
 ```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run server
 python server.py
 ```
 
-Add to your IDE's `mcp_config.json`:
-
+Local `mcp_config.json`:
 ```json
 {
   "mcpServers": {
@@ -49,8 +69,24 @@ Add to your IDE's `mcp_config.json`:
 }
 ```
 
+### Option B: Node.js Setup
+```bash
+npm install
+npm start
+```
+
 ---
 
-## License
+## 🧪 Testing
 
-MIT License. Open source and free for developer use.
+Run the automated unit test suite:
+
+```bash
+python -m unittest test_server.py -v
+```
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE). Open source and free for the community.
