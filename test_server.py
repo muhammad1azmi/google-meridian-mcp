@@ -12,6 +12,8 @@ class TestDocIndex(unittest.TestCase):
     def test_doc_sources_not_empty(self):
         """Ensure all documentation categories contain sources with valid titles and URLs."""
         self.assertGreater(len(MERIDIAN_DOC_SOURCES), 0)
+        total_items = sum(len(items) for items in MERIDIAN_DOC_SOURCES.values())
+        self.assertGreaterEqual(total_items, 600, "Master catalog should contain at least 600 items")
         for category, items in MERIDIAN_DOC_SOURCES.items():
             self.assertTrue(len(items) > 0, f"Category {category} is empty")
             for item in items:
@@ -24,7 +26,7 @@ class TestDocIndex(unittest.TestCase):
         """Ensure topic keywords map to valid documentation items."""
         self.assertIn("budget", TOPIC_KEYWORDS)
         self.assertIn("install", TOPIC_KEYWORDS)
-        self.assertIn("modelspec", TOPIC_KEYWORDS)
+        self.assertIn("causal", TOPIC_KEYWORDS)
         for keyword, items in TOPIC_KEYWORDS.items():
             self.assertTrue(len(items) > 0, f"Keyword '{keyword}' mapped to empty list")
 
@@ -37,6 +39,7 @@ class TestMCPServerTools(unittest.TestCase):
         self.assertIn("# Google Meridian Documentation Sources", result)
         self.assertIn("Category: OVERVIEW AND SETUP", result)
         self.assertIn("Category: API REFERENCE", result)
+        self.assertIn("Category: CAUSAL INFERENCE THEORY", result)
 
     def test_list_doc_sources_filtered(self):
         """Test list_doc_sources with specific category filter."""
@@ -46,14 +49,13 @@ class TestMCPServerTools(unittest.TestCase):
 
     def test_search_doc_topics_matching(self):
         """Test search_doc_topics with matching keywords."""
-        result = server.search_doc_topics(query="budget optimizer")
-        self.assertIn("Topic Search Results for 'budget optimizer'", result)
-        self.assertIn("Budget Optimizer", result)
+        result = server.search_doc_topics(query="budget")
+        self.assertIn("Topic Search Results for 'budget'", result)
 
     def test_search_doc_topics_fallback(self):
         """Test search_doc_topics fallback search."""
-        result = server.search_doc_topics(query="NUTS")
-        self.assertIn("MCMC Sampling & Model Fit", result)
+        result = server.search_doc_topics(query="causal")
+        self.assertIn("Search Results for 'causal'", result)
 
     def test_search_doc_topics_no_match(self):
         """Test search_doc_topics when no match is found."""

@@ -13,4 +13,4 @@ Use this MCP server to explore, search, and read official Google Meridian docume
 
 3. **`fetch_docs(url)`**:
    - Pass any URL returned by `list_doc_sources` or `search_doc_topics` to retrieve the clean Markdown text.
-   - Works on Google Developer documentation pages (`developers.google.com/meridian`), GitHub Python source code (`spec.py`, `budget_optimizer.py`), and Jupyter Notebooks (`.ipynb`).
+   - Works on Google Developer documentation pages (`developers.google.com/meridian`), GitHub Python source code (`spec.py`, `optimizer.py`), and Jupyter Notebooks (`.ipynb`).

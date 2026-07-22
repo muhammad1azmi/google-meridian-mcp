@@ -1,0 +1,3033 @@
+{
+  "OVERVIEW_AND_SETUP": [
+    {
+      "title": "Glossary",
+      "url": "https://developers.google.com/meridian/docs/basics/glossary",
+      "description": "Google Meridian documentation guide for Glossary."
+    },
+    {
+      "title": "Referência de notação matemática",
+      "url": "https://developers.google.com/meridian/docs/basics/math-notation",
+      "description": "Google Meridian documentation guide for Referência de notação matemática."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/docs/basics/meridian-introduction",
+      "description": "Google Meridian documentation guide for Meridian."
+    },
+    {
+      "title": "Budget optimization scenarios",
+      "url": "https://developers.google.com/meridian/docs/user-guide/budget-optimization-scenarios",
+      "description": "Google Meridian documentation guide for Budget optimization scenarios."
+    },
+    {
+      "title": "モデルを構成する",
+      "url": "https://developers.google.com/meridian/docs/user-guide/configure-model",
+      "description": "Google Meridian documentation guide for モデルを構成する."
+    },
+    {
+      "title": "Filter Model Results with selected_geos and selected_times",
+      "url": "https://developers.google.com/meridian/docs/user-guide/filter-selected-times-geos",
+      "description": "Google Meridian documentation guide for Filter Model Results with selected_geos and selected_times."
+    },
+    {
+      "title": "Generate model results output",
+      "url": "https://developers.google.com/meridian/docs/user-guide/generate-model-results-output",
+      "description": "Google Meridian documentation guide for Generate model results output."
+    },
+    {
+      "title": "Generate optimization results output",
+      "url": "https://developers.google.com/meridian/docs/user-guide/generate-optimization-results-output",
+      "description": "Google Meridian documentation guide for Generate optimization results output."
+    },
+    {
+      "title": "Install Meridian",
+      "url": "https://developers.google.com/meridian/docs/user-guide/installing",
+      "description": "Google Meridian documentation guide for Install Meridian."
+    },
+    {
+      "title": "Load geo-level data with organic media and non-media treatments",
+      "url": "https://developers.google.com/meridian/docs/user-guide/load-geo-data-with-organic-and-non-media",
+      "description": "Google Meridian documentation guide for Load geo-level data with organic media and non-media treatments."
+    },
+    {
+      "title": "Load geo-level data with reach and frequency",
+      "url": "https://developers.google.com/meridian/docs/user-guide/load-geo-data-with-rf",
+      "description": "Google Meridian documentation guide for Load geo-level data with reach and frequency."
+    },
+    {
+      "title": "Load geo-level data without reach and frequency",
+      "url": "https://developers.google.com/meridian/docs/user-guide/load-geo-data-without-rf",
+      "description": "Google Meridian documentation guide for Load geo-level data without reach and frequency."
+    },
+    {
+      "title": "Load national-level data",
+      "url": "https://developers.google.com/meridian/docs/user-guide/load-national-data",
+      "description": "Google Meridian documentation guide for Load national-level data."
+    },
+    {
+      "title": "MMM Unified Schema",
+      "url": "https://developers.google.com/meridian/docs/user-guide/mmm-unified-schema",
+      "description": "Google Meridian documentation guide for MMM Unified Schema."
+    },
+    {
+      "title": "Run model diagnostics",
+      "url": "https://developers.google.com/meridian/docs/user-guide/model-diagnostics",
+      "description": "Google Meridian documentation guide for Run model diagnostics."
+    },
+    {
+      "title": "Optimization overview",
+      "url": "https://developers.google.com/meridian/docs/user-guide/optimization-overview",
+      "description": "Google Meridian documentation guide for Optimization overview."
+    },
+    {
+      "title": "优化频次",
+      "url": "https://developers.google.com/meridian/docs/user-guide/optimize-frequency",
+      "description": "Google Meridian documentation guide for 优化频次."
+    },
+    {
+      "title": "Cómo generar visualizaciones de medios",
+      "url": "https://developers.google.com/meridian/docs/user-guide/plot-media-visualizations",
+      "description": "Google Meridian documentation guide for Cómo generar visualizaciones de medios."
+    },
+    {
+      "title": "Plot optimization visualizations",
+      "url": "https://developers.google.com/meridian/docs/user-guide/plot-optimization-visualizations",
+      "description": "Google Meridian documentation guide for Plot optimization visualizations."
+    },
+    {
+      "title": "Run the model",
+      "url": "https://developers.google.com/meridian/docs/user-guide/run-model",
+      "description": "Google Meridian documentation guide for Run the model."
+    },
+    {
+      "title": "Save and load the model object",
+      "url": "https://developers.google.com/meridian/docs/user-guide/saving-model-object",
+      "description": "Google Meridian documentation guide for Save and load the model object."
+    },
+    {
+      "title": "Supported data types and formats",
+      "url": "https://developers.google.com/meridian/docs/user-guide/supported-data-types-formats",
+      "description": "Google Meridian documentation guide for Supported data types and formats."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/mmm",
+      "description": "Google Meridian documentation guide for Meridian."
+    }
+  ],
+  "PRE_MODELING": [
+    {
+      "title": "Amount of data needed",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/amount-data-needed",
+      "description": "Google Meridian documentation guide for Amount of data needed."
+    },
+    {
+      "title": "Collect and organize your data",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/collect-data",
+      "description": "Google Meridian documentation guide for Collect and organize your data."
+    },
+    {
+      "title": "Geo-level modeling",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/geo-selection-national-data",
+      "description": "Google Meridian documentation guide for Geo-level modeling."
+    },
+    {
+      "title": "Introduction to Pre-modeling",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/intro",
+      "description": "Google Meridian documentation guide for Introduction to Pre-modeling."
+    },
+    {
+      "title": "Perform an exploratory data analysis",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/perform-eda",
+      "description": "Google Meridian documentation guide for Perform an exploratory data analysis."
+    },
+    {
+      "title": "Use MMM Data Platform",
+      "url": "https://developers.google.com/meridian/docs/pre-modeling/using-mmm-data-platform",
+      "description": "Google Meridian documentation guide for Use MMM Data Platform."
+    }
+  ],
+  "MODELING_AND_FITTING": [
+    {
+      "title": "FAQs",
+      "url": "https://developers.google.com/meridian/docs/faqs",
+      "description": "Google Meridian documentation guide for FAQs."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/notebook",
+      "description": "Google Meridian documentation guide for Meridian."
+    },
+    {
+      "title": "Introduction to Meridian Demo",
+      "url": "https://developers.google.com/meridian/notebook/meridian-getting-started",
+      "description": "Google Meridian documentation guide for Introduction to Meridian Demo."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/partners",
+      "description": "Google Meridian documentation guide for Meridian."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/reference",
+      "description": "Google Meridian documentation guide for Meridian."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/support",
+      "description": "Google Meridian documentation guide for Meridian."
+    }
+  ],
+  "POST_MODELING_AND_OPTIMIZATION": [
+    {
+      "title": "Assess the baseline",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/baseline",
+      "description": "Google Meridian documentation guide for Assess the baseline."
+    },
+    {
+      "title": "Model health checks",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/health-checks",
+      "description": "Google Meridian documentation guide for Model health checks."
+    },
+    {
+      "title": "Score d&apos;état du modèle",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/health-score",
+      "description": "Google Meridian documentation guide for Score d&apos;état du modèle."
+    },
+    {
+      "title": "Interpret the optimizations",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/interpret-optimizations",
+      "description": "Google Meridian documentation guide for Interpret the optimizations."
+    },
+    {
+      "title": "Interpret the visualizations",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/interpret-visualizations",
+      "description": "Google Meridian documentation guide for Interpret the visualizations."
+    },
+    {
+      "title": "Introduction to Post-modeling",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/intro",
+      "description": "Google Meridian documentation guide for Introduction to Post-modeling."
+    },
+    {
+      "title": "Fehlerbehebung bei Modellen",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/model-debugging",
+      "description": "Google Meridian documentation guide for Fehlerbehebung bei Modellen."
+    },
+    {
+      "title": "Assess the model fit and the results",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/model-fit",
+      "description": "Google Meridian documentation guide for Assess the model fit and the results."
+    },
+    {
+      "title": "リーチとフリークエンシーのデータを使用したメディア チャネルの最適化",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/optimization-with-reach-frequency",
+      "description": "Google Meridian documentation guide for リーチとフリークエンシーのデータを使用したメディア チャネルの最適化."
+    },
+    {
+      "title": "Optimization for media channels without reach and frequency data",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/optimization-without-reach-frequency",
+      "description": "Google Meridian documentation guide for Optimization for media channels without reach and frequency data."
+    },
+    {
+      "title": "Refresh the model",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/refreshing-model",
+      "description": "Google Meridian documentation guide for Refresh the model."
+    },
+    {
+      "title": "Resultados incrementales, ROI, mROI y curvas de respuesta",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/roi-mroi-response-curves",
+      "description": "Google Meridian documentation guide for Resultados incrementales, ROI, mROI y curvas de respuesta."
+    },
+    {
+      "title": "Scenario planning and future budget optimization",
+      "url": "https://developers.google.com/meridian/docs/post-modeling/scenario-planning-and-future-budget-optimization",
+      "description": "Google Meridian documentation guide for Scenario planning and future budget optimization."
+    },
+    {
+      "title": "FAQs + Troubleshooting",
+      "url": "https://developers.google.com/meridian/docs/scenario-planning/faqs",
+      "description": "Google Meridian documentation guide for FAQs + Troubleshooting."
+    },
+    {
+      "title": "Meridian Scenario Planner (Open Beta)",
+      "url": "https://developers.google.com/meridian/docs/scenario-planning/meridian-scenario-planner",
+      "description": "Google Meridian documentation guide for Meridian Scenario Planner (Open Beta)."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/geox",
+      "description": "Google Meridian documentation guide for Meridian."
+    },
+    {
+      "title": "Meridian",
+      "url": "https://developers.google.com/meridian/studio",
+      "description": "Google Meridian documentation guide for Meridian."
+    }
+  ],
+  "CAUSAL_INFERENCE_THEORY": [
+    {
+      "title": "About MMM as a causal inference methodology",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/about-mmm-causal-inference-methodology",
+      "description": "Google Meridian documentation guide for About MMM as a causal inference methodology."
+    },
+    {
+      "title": "Inférence bayésienne",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/bayesian-inference",
+      "description": "Google Meridian documentation guide for Inférence bayésienne."
+    },
+    {
+      "title": "Causal graph",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/causal-graph",
+      "description": "Google Meridian documentation guide for Causal graph."
+    },
+    {
+      "title": "Estimating incremental outcome using regression",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/estimating-incremental-outcome",
+      "description": "Google Meridian documentation guide for Estimating incremental outcome using regression."
+    },
+    {
+      "title": "Introducción a la teoría del modelado bayesiano y la inferencia causal",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/intro",
+      "description": "Google Meridian documentation guide for Introducción a la teoría del modelado bayesiano y la inferencia causal."
+    },
+    {
+      "title": "Extension to models with reach and frequency",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/models-reach-freq",
+      "description": "Google Meridian documentation guide for Extension to models with reach and frequency."
+    },
+    {
+      "title": "Justificativa para inferência causal e modelagem bayesiana",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/rationale-for-causal-inference-and-bayesian-modeling",
+      "description": "Google Meridian documentation guide for Justificativa para inferência causal e modelagem bayesiana."
+    },
+    {
+      "title": "References",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/reference-list",
+      "description": "Google Meridian documentation guide for References."
+    },
+    {
+      "title": "Required assumptions",
+      "url": "https://developers.google.com/meridian/docs/causal-inference/required-assumptions",
+      "description": "Google Meridian documentation guide for Required assumptions."
+    }
+  ],
+  "ADVANCED_MODELING": [
+    {
+      "title": "Control variables",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/control-variables",
+      "description": "Google Meridian documentation guide for Control variables."
+    },
+    {
+      "title": "Set custom priors from a combination of distribution families",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/custom-prior-combine-distribution-families",
+      "description": "Google Meridian documentation guide for Set custom priors from a combination of distribution families."
+    },
+    {
+      "title": "デフォルトの事前分布",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/default-prior-distributions",
+      "description": "Google Meridian documentation guide for デフォルトの事前分布."
+    },
+    {
+      "title": "Holdout-Beobachtungen (Trainings- und Testaufteilung)",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/holdout-observations",
+      "description": "Google Meridian documentation guide for Holdout-Beobachtungen (Trainings- und Testaufteilung)."
+    },
+    {
+      "title": "Choose and configure treatment prior types",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/how-to-choose-treatment-prior-types",
+      "description": "Google Meridian documentation guide for Choose and configure treatment prior types."
+    },
+    {
+      "title": "Dados de entrada",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/input-data",
+      "description": "Google Meridian documentation guide for Dados de entrada."
+    },
+    {
+      "title": "Introduction to Applied Modeling",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/intro",
+      "description": "Google Meridian documentation guide for Introduction to Applied Modeling."
+    },
+    {
+      "title": "Introducción a las distribuciones a priori",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/intro-priors",
+      "description": "Google Meridian documentation guide for Introducción a las distribuciones a priori."
+    },
+    {
+      "title": "Media saturation and lagging",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/media-saturation-lagging",
+      "description": "Google Meridian documentation guide for Media saturation and lagging."
+    },
+    {
+      "title": "Model specification",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/model-spec",
+      "description": "Google Meridian documentation guide for Model specification."
+    },
+    {
+      "title": "全国レベルのモデリング",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/national-models",
+      "description": "Google Meridian documentation guide for 全国レベルのモデリング."
+    },
+    {
+      "title": "Organic media and non-media treatment variables",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/organic-and-non-media-variables",
+      "description": "Google Meridian documentation guide for Organic media and non-media treatment variables."
+    },
+    {
+      "title": "Paid search modeling",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/paid-search-modeling",
+      "description": "Google Meridian documentation guide for Paid search modeling."
+    },
+    {
+      "title": "Reach and frequency",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/reach-frequency",
+      "description": "Google Meridian documentation guide for Reach and frequency."
+    },
+    {
+      "title": "ROI, mROI, and Contribution parameterizations",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/roi-mroi-contribution-parameterizations",
+      "description": "Google Meridian documentation guide for ROI, mROI, and Contribution parameterizations."
+    },
+    {
+      "title": "校准处理变量先验",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/roi-priors-and-calibration",
+      "description": "Google Meridian documentation guide for 校准处理变量先验."
+    },
+    {
+      "title": "Set the adstock_decay_spec parameter",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/set-adstock-decay-spec-parameter",
+      "description": "Google Meridian documentation guide for Set the adstock_decay_spec parameter."
+    },
+    {
+      "title": "Set custom ROI priors using past experiments",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/set-custom-priors-past-experiments",
+      "description": "Google Meridian documentation guide for Set custom ROI priors using past experiments."
+    },
+    {
+      "title": "Set the max_lag parameter",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/set-max-lag-parameter",
+      "description": "Google Meridian documentation guide for Set the max_lag parameter."
+    },
+    {
+      "title": "Set knots",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/setting-knots",
+      "description": "Google Meridian documentation guide for Set knots."
+    },
+    {
+      "title": "Set custom priors when outcome is not revenue",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/unknown-revenue-kpi-custom",
+      "description": "Google Meridian documentation guide for Set custom priors when outcome is not revenue."
+    },
+    {
+      "title": "When the KPI is not revenue (total paid media contribution prior)",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/unknown-revenue-kpi-default",
+      "description": "Google Meridian documentation guide for When the KPI is not revenue (total paid media contribution prior)."
+    },
+    {
+      "title": "Use the JAX backend",
+      "url": "https://developers.google.com/meridian/docs/advanced-modeling/using-jax",
+      "description": "Google Meridian documentation guide for Use the JAX backend."
+    }
+  ],
+  "API_REFERENCE": [
+    {
+      "title": "Module: meridian",
+      "url": "https://developers.google.com/meridian/reference/api/meridian",
+      "description": "API reference documentation for Module: meridian."
+    },
+    {
+      "title": "Module: meridian.analysis",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis",
+      "description": "API reference documentation for Module: meridian.analysis."
+    },
+    {
+      "title": "meridian.analysis.DataTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/DataTensors",
+      "description": "API reference documentation for meridian.analysis.DataTensors."
+    },
+    {
+      "title": "meridian.analysis.DataTensors.Spec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/DataTensors/Spec",
+      "description": "API reference documentation for meridian.analysis.DataTensors.Spec."
+    },
+    {
+      "title": "meridian.analysis.DistributionTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/DistributionTensors",
+      "description": "API reference documentation for meridian.analysis.DistributionTensors."
+    },
+    {
+      "title": "meridian.analysis.DistributionTensors.Spec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/DistributionTensors/Spec",
+      "description": "API reference documentation for meridian.analysis.DistributionTensors.Spec."
+    },
+    {
+      "title": "Module: meridian.analysis.analyzer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/analyzer",
+      "description": "API reference documentation for Module: meridian.analysis.analyzer."
+    },
+    {
+      "title": "meridian.analysis.analyzer.Analyzer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/analyzer/Analyzer",
+      "description": "API reference documentation for meridian.analysis.analyzer.Analyzer."
+    },
+    {
+      "title": "meridian.analysis.analyzer.get_central_tendency_and_ci",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/analyzer/get_central_tendency_and_ci",
+      "description": "API reference documentation for meridian.analysis.analyzer.get_central_tendency_and_ci."
+    },
+    {
+      "title": "Module: meridian.analysis.formatter",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter",
+      "description": "API reference documentation for Module: meridian.analysis.formatter."
+    },
+    {
+      "title": "meridian.analysis.formatter.CardSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/CardSpec",
+      "description": "API reference documentation for meridian.analysis.formatter.CardSpec."
+    },
+    {
+      "title": "meridian.analysis.formatter.ChartSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/ChartSpec",
+      "description": "API reference documentation for meridian.analysis.formatter.ChartSpec."
+    },
+    {
+      "title": "meridian.analysis.formatter.StatsSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/StatsSpec",
+      "description": "API reference documentation for meridian.analysis.formatter.StatsSpec."
+    },
+    {
+      "title": "meridian.analysis.formatter.TableSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/TableSpec",
+      "description": "API reference documentation for meridian.analysis.formatter.TableSpec."
+    },
+    {
+      "title": "meridian.analysis.formatter.create_card_html",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/create_card_html",
+      "description": "API reference documentation for meridian.analysis.formatter.create_card_html."
+    },
+    {
+      "title": "meridian.analysis.formatter.create_template_env",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/formatter/create_template_env",
+      "description": "API reference documentation for meridian.analysis.formatter.create_template_env."
+    },
+    {
+      "title": "Module: meridian.analysis.optimizer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer",
+      "description": "API reference documentation for Module: meridian.analysis.optimizer."
+    },
+    {
+      "title": "meridian.analysis.optimizer.BudgetOptimizer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/BudgetOptimizer",
+      "description": "API reference documentation for meridian.analysis.optimizer.BudgetOptimizer."
+    },
+    {
+      "title": "meridian.analysis.optimizer.FixedBudgetScenario",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/FixedBudgetScenario",
+      "description": "API reference documentation for meridian.analysis.optimizer.FixedBudgetScenario."
+    },
+    {
+      "title": "meridian.analysis.optimizer.FlexibleBudgetScenario",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/FlexibleBudgetScenario",
+      "description": "API reference documentation for meridian.analysis.optimizer.FlexibleBudgetScenario."
+    },
+    {
+      "title": "meridian.analysis.optimizer.OptimizationGrid",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/OptimizationGrid",
+      "description": "API reference documentation for meridian.analysis.optimizer.OptimizationGrid."
+    },
+    {
+      "title": "meridian.analysis.optimizer.OptimizationResults",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/OptimizationResults",
+      "description": "API reference documentation for meridian.analysis.optimizer.OptimizationResults."
+    },
+    {
+      "title": "meridian.analysis.optimizer.get_optimization_bounds",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/get_optimization_bounds",
+      "description": "API reference documentation for meridian.analysis.optimizer.get_optimization_bounds."
+    },
+    {
+      "title": "meridian.analysis.optimizer.get_round_factor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/optimizer/get_round_factor",
+      "description": "API reference documentation for meridian.analysis.optimizer.get_round_factor."
+    },
+    {
+      "title": "Module: meridian.analysis.review",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review",
+      "description": "API reference documentation for Module: meridian.analysis.review."
+    },
+    {
+      "title": "Module: meridian.analysis.review.checks",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks",
+      "description": "API reference documentation for Module: meridian.analysis.review.checks."
+    },
+    {
+      "title": "meridian.analysis.review.checks.BaseCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/BaseCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.BaseCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.BaselineCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/BaselineCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.BaselineCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.BayesianPPPCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/BayesianPPPCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.BayesianPPPCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.ConvergenceCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/ConvergenceCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.ConvergenceCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.GoodnessOfFitCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/GoodnessOfFitCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.GoodnessOfFitCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.HighVarianceCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/HighVarianceCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.HighVarianceCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.ImplausibleROICheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/ImplausibleROICheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.ImplausibleROICheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.MutableMapping",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/MutableMapping",
+      "description": "API reference documentation for meridian.analysis.review.checks.MutableMapping."
+    },
+    {
+      "title": "meridian.analysis.review.checks.PotentialBiasCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/PotentialBiasCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.PotentialBiasCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.PriorPosteriorShiftCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/PriorPosteriorShiftCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.PriorPosteriorShiftCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.ROIConsistencyCheck",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/ROIConsistencyCheck",
+      "description": "API reference documentation for meridian.analysis.review.checks.ROIConsistencyCheck."
+    },
+    {
+      "title": "meridian.analysis.review.checks.Sequence",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/checks/Sequence",
+      "description": "API reference documentation for meridian.analysis.review.checks.Sequence."
+    },
+    {
+      "title": "Module: meridian.analysis.review.configs",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs",
+      "description": "API reference documentation for Module: meridian.analysis.review.configs."
+    },
+    {
+      "title": "meridian.analysis.review.configs.BaseConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/BaseConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.BaseConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.BaselineConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/BaselineConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.BaselineConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.BayesianPPPConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/BayesianPPPConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.BayesianPPPConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.ConvergenceConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/ConvergenceConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.ConvergenceConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.GoodnessOfFitConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/GoodnessOfFitConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.GoodnessOfFitConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.HighVarianceConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/HighVarianceConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.HighVarianceConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.ImplausibleROIConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/ImplausibleROIConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.ImplausibleROIConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.PotentialBiasConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/PotentialBiasConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.PotentialBiasConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.PriorPosteriorShiftConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/PriorPosteriorShiftConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.PriorPosteriorShiftConfig."
+    },
+    {
+      "title": "meridian.analysis.review.configs.ROIConsistencyConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/configs/ROIConsistencyConfig",
+      "description": "API reference documentation for meridian.analysis.review.configs.ROIConsistencyConfig."
+    },
+    {
+      "title": "Module: meridian.analysis.review.results",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results",
+      "description": "API reference documentation for Module: meridian.analysis.review.results."
+    },
+    {
+      "title": "meridian.analysis.review.results.BaseCase",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BaseCase",
+      "description": "API reference documentation for meridian.analysis.review.results.BaseCase."
+    },
+    {
+      "title": "meridian.analysis.review.results.BaseResultData",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BaseResultData",
+      "description": "API reference documentation for meridian.analysis.review.results.BaseResultData."
+    },
+    {
+      "title": "meridian.analysis.review.results.BaselineCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BaselineCases",
+      "description": "API reference documentation for meridian.analysis.review.results.BaselineCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.BaselineCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BaselineCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.BaselineCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.BayesianPPPCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BayesianPPPCases",
+      "description": "API reference documentation for meridian.analysis.review.results.BayesianPPPCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.BayesianPPPCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/BayesianPPPCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.BayesianPPPCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.CheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/CheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.CheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ConvergenceCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ConvergenceCases",
+      "description": "API reference documentation for meridian.analysis.review.results.ConvergenceCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.ConvergenceCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ConvergenceCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ConvergenceCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.GoodnessOfFitCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/GoodnessOfFitCases",
+      "description": "API reference documentation for meridian.analysis.review.results.GoodnessOfFitCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.GoodnessOfFitCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/GoodnessOfFitCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.GoodnessOfFitCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.GoodnessOfFitMetrics",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/GoodnessOfFitMetrics",
+      "description": "API reference documentation for meridian.analysis.review.results.GoodnessOfFitMetrics."
+    },
+    {
+      "title": "meridian.analysis.review.results.HighVarianceAggregateCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/HighVarianceAggregateCases",
+      "description": "API reference documentation for meridian.analysis.review.results.HighVarianceAggregateCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.HighVarianceChannelCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/HighVarianceChannelCases",
+      "description": "API reference documentation for meridian.analysis.review.results.HighVarianceChannelCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.HighVarianceChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/HighVarianceChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.HighVarianceChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.HighVarianceCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/HighVarianceCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.HighVarianceCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ImplausibleROIAggregateCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ImplausibleROIAggregateCases",
+      "description": "API reference documentation for meridian.analysis.review.results.ImplausibleROIAggregateCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.ImplausibleROIChannelCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ImplausibleROIChannelCases",
+      "description": "API reference documentation for meridian.analysis.review.results.ImplausibleROIChannelCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.ImplausibleROIChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ImplausibleROIChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ImplausibleROIChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ImplausibleROICheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ImplausibleROICheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ImplausibleROICheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.Mapping",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/Mapping",
+      "description": "API reference documentation for meridian.analysis.review.results.Mapping."
+    },
+    {
+      "title": "meridian.analysis.review.results.ModelCheckCase",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ModelCheckCase",
+      "description": "API reference documentation for meridian.analysis.review.results.ModelCheckCase."
+    },
+    {
+      "title": "meridian.analysis.review.results.PotentialBiasAggregateCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PotentialBiasAggregateCases",
+      "description": "API reference documentation for meridian.analysis.review.results.PotentialBiasAggregateCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.PotentialBiasChannelCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PotentialBiasChannelCases",
+      "description": "API reference documentation for meridian.analysis.review.results.PotentialBiasChannelCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.PotentialBiasChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PotentialBiasChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.PotentialBiasChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.PotentialBiasCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PotentialBiasCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.PotentialBiasCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.PriorPosteriorShiftAggregateCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PriorPosteriorShiftAggregateCases",
+      "description": "API reference documentation for meridian.analysis.review.results.PriorPosteriorShiftAggregateCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.PriorPosteriorShiftChannelCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PriorPosteriorShiftChannelCases",
+      "description": "API reference documentation for meridian.analysis.review.results.PriorPosteriorShiftChannelCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.PriorPosteriorShiftChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PriorPosteriorShiftChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.PriorPosteriorShiftChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.PriorPosteriorShiftCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/PriorPosteriorShiftCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.PriorPosteriorShiftCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ROIConsistencyAggregateCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ROIConsistencyAggregateCases",
+      "description": "API reference documentation for meridian.analysis.review.results.ROIConsistencyAggregateCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.ROIConsistencyChannelCases",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ROIConsistencyChannelCases",
+      "description": "API reference documentation for meridian.analysis.review.results.ROIConsistencyChannelCases."
+    },
+    {
+      "title": "meridian.analysis.review.results.ROIConsistencyChannelResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ROIConsistencyChannelResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ROIConsistencyChannelResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ROIConsistencyCheckResult",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ROIConsistencyCheckResult",
+      "description": "API reference documentation for meridian.analysis.review.results.ROIConsistencyCheckResult."
+    },
+    {
+      "title": "meridian.analysis.review.results.ReviewSummary",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/ReviewSummary",
+      "description": "API reference documentation for meridian.analysis.review.results.ReviewSummary."
+    },
+    {
+      "title": "meridian.analysis.review.results.Status",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/results/Status",
+      "description": "API reference documentation for meridian.analysis.review.results.Status."
+    },
+    {
+      "title": "Module: meridian.analysis.review.reviewer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/reviewer",
+      "description": "API reference documentation for Module: meridian.analysis.review.reviewer."
+    },
+    {
+      "title": "meridian.analysis.review.reviewer.CheckType",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/reviewer/CheckType",
+      "description": "API reference documentation for meridian.analysis.review.reviewer.CheckType."
+    },
+    {
+      "title": "meridian.analysis.review.reviewer.ChecksBattery",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/reviewer/ChecksBattery",
+      "description": "API reference documentation for meridian.analysis.review.reviewer.ChecksBattery."
+    },
+    {
+      "title": "meridian.analysis.review.reviewer.ModelReviewer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/review/reviewer/ModelReviewer",
+      "description": "API reference documentation for meridian.analysis.review.reviewer.ModelReviewer."
+    },
+    {
+      "title": "Module: meridian.analysis.summarizer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/summarizer",
+      "description": "API reference documentation for Module: meridian.analysis.summarizer."
+    },
+    {
+      "title": "meridian.analysis.summarizer.Summarizer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/summarizer/Summarizer",
+      "description": "API reference documentation for meridian.analysis.summarizer.Summarizer."
+    },
+    {
+      "title": "Module: meridian.analysis.visualizer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer",
+      "description": "API reference documentation for Module: meridian.analysis.visualizer."
+    },
+    {
+      "title": "meridian.analysis.visualizer.MediaEffects",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer/MediaEffects",
+      "description": "API reference documentation for meridian.analysis.visualizer.MediaEffects."
+    },
+    {
+      "title": "meridian.analysis.visualizer.MediaSummary",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer/MediaSummary",
+      "description": "API reference documentation for meridian.analysis.visualizer.MediaSummary."
+    },
+    {
+      "title": "meridian.analysis.visualizer.ModelDiagnostics",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer/ModelDiagnostics",
+      "description": "API reference documentation for meridian.analysis.visualizer.ModelDiagnostics."
+    },
+    {
+      "title": "meridian.analysis.visualizer.ModelFit",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer/ModelFit",
+      "description": "API reference documentation for meridian.analysis.visualizer.ModelFit."
+    },
+    {
+      "title": "meridian.analysis.visualizer.ReachAndFrequency",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/analysis/visualizer/ReachAndFrequency",
+      "description": "API reference documentation for meridian.analysis.visualizer.ReachAndFrequency."
+    },
+    {
+      "title": "Module: meridian.backend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend",
+      "description": "API reference documentation for Module: meridian.backend."
+    },
+    {
+      "title": "meridian.backend.ExtensionType",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/ExtensionType",
+      "description": "API reference documentation for meridian.backend.ExtensionType."
+    },
+    {
+      "title": "meridian.backend.RNGHandler",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/RNGHandler",
+      "description": "API reference documentation for meridian.backend.RNGHandler."
+    },
+    {
+      "title": "meridian.backend.Tensor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/Tensor",
+      "description": "API reference documentation for meridian.backend.Tensor."
+    },
+    {
+      "title": "meridian.backend.TensorShape",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/TensorShape",
+      "description": "API reference documentation for meridian.backend.TensorShape."
+    },
+    {
+      "title": "meridian.backend.absolute",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/absolute",
+      "description": "API reference documentation for meridian.backend.absolute."
+    },
+    {
+      "title": "meridian.backend.adstock_process",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/adstock_process",
+      "description": "API reference documentation for meridian.backend.adstock_process."
+    },
+    {
+      "title": "meridian.backend.allclose",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/allclose",
+      "description": "API reference documentation for meridian.backend.allclose."
+    },
+    {
+      "title": "meridian.backend.arange",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/arange",
+      "description": "API reference documentation for meridian.backend.arange."
+    },
+    {
+      "title": "meridian.backend.argmax",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/argmax",
+      "description": "API reference documentation for meridian.backend.argmax."
+    },
+    {
+      "title": "meridian.backend.boolean_mask",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/boolean_mask",
+      "description": "API reference documentation for meridian.backend.boolean_mask."
+    },
+    {
+      "title": "meridian.backend.broadcast_dynamic_shape",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/broadcast_dynamic_shape",
+      "description": "API reference documentation for meridian.backend.broadcast_dynamic_shape."
+    },
+    {
+      "title": "meridian.backend.broadcast_to",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/broadcast_to",
+      "description": "API reference documentation for meridian.backend.broadcast_to."
+    },
+    {
+      "title": "meridian.backend.cast",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/cast",
+      "description": "API reference documentation for meridian.backend.cast."
+    },
+    {
+      "title": "meridian.backend.computation_backend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/computation_backend",
+      "description": "API reference documentation for meridian.backend.computation_backend."
+    },
+    {
+      "title": "meridian.backend.computation_precision",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/computation_precision",
+      "description": "API reference documentation for meridian.backend.computation_precision."
+    },
+    {
+      "title": "meridian.backend.concatenate",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/concatenate",
+      "description": "API reference documentation for meridian.backend.concatenate."
+    },
+    {
+      "title": "Module: meridian.backend.config",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config",
+      "description": "API reference documentation for Module: meridian.backend.config."
+    },
+    {
+      "title": "meridian.backend.config.Backend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config/Backend",
+      "description": "API reference documentation for meridian.backend.config.Backend."
+    },
+    {
+      "title": "meridian.backend.config.ComputationBackend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config/ComputationBackend",
+      "description": "API reference documentation for meridian.backend.config.ComputationBackend."
+    },
+    {
+      "title": "meridian.backend.config.ComputationPrecision",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config/ComputationPrecision",
+      "description": "API reference documentation for meridian.backend.config.ComputationPrecision."
+    },
+    {
+      "title": "meridian.backend.config.get_backend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config/get_backend",
+      "description": "API reference documentation for meridian.backend.config.get_backend."
+    },
+    {
+      "title": "meridian.backend.config.set_backend",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/config/set_backend",
+      "description": "API reference documentation for meridian.backend.config.set_backend."
+    },
+    {
+      "title": "meridian.backend.cumsum",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/cumsum",
+      "description": "API reference documentation for meridian.backend.cumsum."
+    },
+    {
+      "title": "meridian.backend.divide",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/divide",
+      "description": "API reference documentation for meridian.backend.divide."
+    },
+    {
+      "title": "meridian.backend.divide_no_nan",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/divide_no_nan",
+      "description": "API reference documentation for meridian.backend.divide_no_nan."
+    },
+    {
+      "title": "meridian.backend.einsum",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/einsum",
+      "description": "API reference documentation for meridian.backend.einsum."
+    },
+    {
+      "title": "meridian.backend.enable_op_determinism",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/enable_op_determinism",
+      "description": "API reference documentation for meridian.backend.enable_op_determinism."
+    },
+    {
+      "title": "meridian.backend.equal",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/equal",
+      "description": "API reference documentation for meridian.backend.equal."
+    },
+    {
+      "title": "meridian.backend.exp",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/exp",
+      "description": "API reference documentation for meridian.backend.exp."
+    },
+    {
+      "title": "meridian.backend.expand_dims",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/expand_dims",
+      "description": "API reference documentation for meridian.backend.expand_dims."
+    },
+    {
+      "title": "meridian.backend.fill",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/fill",
+      "description": "API reference documentation for meridian.backend.fill."
+    },
+    {
+      "title": "meridian.backend.function",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/function",
+      "description": "API reference documentation for meridian.backend.function."
+    },
+    {
+      "title": "meridian.backend.gather",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/gather",
+      "description": "API reference documentation for meridian.backend.gather."
+    },
+    {
+      "title": "meridian.backend.get_indices_where",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/get_indices_where",
+      "description": "API reference documentation for meridian.backend.get_indices_where."
+    },
+    {
+      "title": "meridian.backend.get_seed_data",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/get_seed_data",
+      "description": "API reference documentation for meridian.backend.get_seed_data."
+    },
+    {
+      "title": "meridian.backend.is_nan",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/is_nan",
+      "description": "API reference documentation for meridian.backend.is_nan."
+    },
+    {
+      "title": "meridian.backend.log",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/log",
+      "description": "API reference documentation for meridian.backend.log."
+    },
+    {
+      "title": "meridian.backend.make_ndarray",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/make_ndarray",
+      "description": "API reference documentation for meridian.backend.make_ndarray."
+    },
+    {
+      "title": "meridian.backend.make_tensor_proto",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/make_tensor_proto",
+      "description": "API reference documentation for meridian.backend.make_tensor_proto."
+    },
+    {
+      "title": "meridian.backend.nanmean",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/nanmean",
+      "description": "API reference documentation for meridian.backend.nanmean."
+    },
+    {
+      "title": "meridian.backend.nanmedian",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/nanmedian",
+      "description": "API reference documentation for meridian.backend.nanmedian."
+    },
+    {
+      "title": "meridian.backend.nansum",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/nansum",
+      "description": "API reference documentation for meridian.backend.nansum."
+    },
+    {
+      "title": "meridian.backend.nanvar",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/nanvar",
+      "description": "API reference documentation for meridian.backend.nanvar."
+    },
+    {
+      "title": "meridian.backend.np_float_dtype",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/np_float_dtype",
+      "description": "API reference documentation for meridian.backend.np_float_dtype."
+    },
+    {
+      "title": "meridian.backend.numpy_function",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/numpy_function",
+      "description": "API reference documentation for meridian.backend.numpy_function."
+    },
+    {
+      "title": "meridian.backend.one_hot",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/one_hot",
+      "description": "API reference documentation for meridian.backend.one_hot."
+    },
+    {
+      "title": "meridian.backend.ones",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/ones",
+      "description": "API reference documentation for meridian.backend.ones."
+    },
+    {
+      "title": "meridian.backend.ones_like",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/ones_like",
+      "description": "API reference documentation for meridian.backend.ones_like."
+    },
+    {
+      "title": "meridian.backend.rank",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/rank",
+      "description": "API reference documentation for meridian.backend.rank."
+    },
+    {
+      "title": "meridian.backend.reduce_any",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_any",
+      "description": "API reference documentation for meridian.backend.reduce_any."
+    },
+    {
+      "title": "meridian.backend.reduce_max",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_max",
+      "description": "API reference documentation for meridian.backend.reduce_max."
+    },
+    {
+      "title": "meridian.backend.reduce_mean",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_mean",
+      "description": "API reference documentation for meridian.backend.reduce_mean."
+    },
+    {
+      "title": "meridian.backend.reduce_min",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_min",
+      "description": "API reference documentation for meridian.backend.reduce_min."
+    },
+    {
+      "title": "meridian.backend.reduce_std",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_std",
+      "description": "API reference documentation for meridian.backend.reduce_std."
+    },
+    {
+      "title": "meridian.backend.reduce_sum",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reduce_sum",
+      "description": "API reference documentation for meridian.backend.reduce_sum."
+    },
+    {
+      "title": "meridian.backend.repeat",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/repeat",
+      "description": "API reference documentation for meridian.backend.repeat."
+    },
+    {
+      "title": "meridian.backend.reshape",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/reshape",
+      "description": "API reference documentation for meridian.backend.reshape."
+    },
+    {
+      "title": "meridian.backend.result_type",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/result_type",
+      "description": "API reference documentation for meridian.backend.result_type."
+    },
+    {
+      "title": "meridian.backend.roll",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/roll",
+      "description": "API reference documentation for meridian.backend.roll."
+    },
+    {
+      "title": "meridian.backend.set_random_seed",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/set_random_seed",
+      "description": "API reference documentation for meridian.backend.set_random_seed."
+    },
+    {
+      "title": "meridian.backend.split",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/split",
+      "description": "API reference documentation for meridian.backend.split."
+    },
+    {
+      "title": "meridian.backend.squeeze",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/squeeze",
+      "description": "API reference documentation for meridian.backend.squeeze."
+    },
+    {
+      "title": "meridian.backend.stabilize_rf_roi_grid",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/stabilize_rf_roi_grid",
+      "description": "API reference documentation for meridian.backend.stabilize_rf_roi_grid."
+    },
+    {
+      "title": "meridian.backend.stack",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/stack",
+      "description": "API reference documentation for meridian.backend.stack."
+    },
+    {
+      "title": "meridian.backend.standardize_dtype",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/standardize_dtype",
+      "description": "API reference documentation for meridian.backend.standardize_dtype."
+    },
+    {
+      "title": "meridian.backend.tile",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/tile",
+      "description": "API reference documentation for meridian.backend.tile."
+    },
+    {
+      "title": "meridian.backend.to_tensor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/to_tensor",
+      "description": "API reference documentation for meridian.backend.to_tensor."
+    },
+    {
+      "title": "meridian.backend.transpose",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/transpose",
+      "description": "API reference documentation for meridian.backend.transpose."
+    },
+    {
+      "title": "meridian.backend.unique_with_counts",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/unique_with_counts",
+      "description": "API reference documentation for meridian.backend.unique_with_counts."
+    },
+    {
+      "title": "meridian.backend.vectorized_map",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/vectorized_map",
+      "description": "API reference documentation for meridian.backend.vectorized_map."
+    },
+    {
+      "title": "meridian.backend.where",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/where",
+      "description": "API reference documentation for meridian.backend.where."
+    },
+    {
+      "title": "meridian.backend.xla_windowed_adaptive_nuts",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/xla_windowed_adaptive_nuts",
+      "description": "API reference documentation for meridian.backend.xla_windowed_adaptive_nuts."
+    },
+    {
+      "title": "meridian.backend.zeros",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/zeros",
+      "description": "API reference documentation for meridian.backend.zeros."
+    },
+    {
+      "title": "meridian.backend.zeros_like",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/backend/zeros_like",
+      "description": "API reference documentation for meridian.backend.zeros_like."
+    },
+    {
+      "title": "Module: meridian.data",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data",
+      "description": "API reference documentation for Module: meridian.data."
+    },
+    {
+      "title": "Module: meridian.data.arg_builder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/arg_builder",
+      "description": "API reference documentation for Module: meridian.data.arg_builder."
+    },
+    {
+      "title": "meridian.data.arg_builder.OrderedListArgumentBuilder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/arg_builder/OrderedListArgumentBuilder",
+      "description": "API reference documentation for meridian.data.arg_builder.OrderedListArgumentBuilder."
+    },
+    {
+      "title": "Module: meridian.data.data_frame_input_data_builder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/data_frame_input_data_builder",
+      "description": "API reference documentation for Module: meridian.data.data_frame_input_data_builder."
+    },
+    {
+      "title": "meridian.data.data_frame_input_data_builder.DataFrameInputDataBuilder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/data_frame_input_data_builder/DataFrameInputDataBuilder",
+      "description": "API reference documentation for meridian.data.data_frame_input_data_builder.DataFrameInputDataBuilder."
+    },
+    {
+      "title": "Module: meridian.data.input_data",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/input_data",
+      "description": "API reference documentation for Module: meridian.data.input_data."
+    },
+    {
+      "title": "meridian.data.input_data.InputData",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/input_data/InputData",
+      "description": "API reference documentation for meridian.data.input_data.InputData."
+    },
+    {
+      "title": "Module: meridian.data.input_data_builder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/input_data_builder",
+      "description": "API reference documentation for Module: meridian.data.input_data_builder."
+    },
+    {
+      "title": "meridian.data.input_data_builder.InputDataBuilder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/input_data_builder/InputDataBuilder",
+      "description": "API reference documentation for meridian.data.input_data_builder.InputDataBuilder."
+    },
+    {
+      "title": "Module: meridian.data.load",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load",
+      "description": "API reference documentation for Module: meridian.data.load."
+    },
+    {
+      "title": "meridian.data.load.CoordToColumns",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load/CoordToColumns",
+      "description": "API reference documentation for meridian.data.load.CoordToColumns."
+    },
+    {
+      "title": "meridian.data.load.CsvDataLoader",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load/CsvDataLoader",
+      "description": "API reference documentation for meridian.data.load.CsvDataLoader."
+    },
+    {
+      "title": "meridian.data.load.DataFrameDataLoader",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load/DataFrameDataLoader",
+      "description": "API reference documentation for meridian.data.load.DataFrameDataLoader."
+    },
+    {
+      "title": "meridian.data.load.InputDataLoader",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load/InputDataLoader",
+      "description": "API reference documentation for meridian.data.load.InputDataLoader."
+    },
+    {
+      "title": "meridian.data.load.XrDatasetDataLoader",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/load/XrDatasetDataLoader",
+      "description": "API reference documentation for meridian.data.load.XrDatasetDataLoader."
+    },
+    {
+      "title": "Module: meridian.data.nd_array_input_data_builder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/nd_array_input_data_builder",
+      "description": "API reference documentation for Module: meridian.data.nd_array_input_data_builder."
+    },
+    {
+      "title": "meridian.data.nd_array_input_data_builder.NDArrayInputDataBuilder",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/nd_array_input_data_builder/NDArrayInputDataBuilder",
+      "description": "API reference documentation for meridian.data.nd_array_input_data_builder.NDArrayInputDataBuilder."
+    },
+    {
+      "title": "Module: meridian.data.time_coordinates",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/time_coordinates",
+      "description": "API reference documentation for Module: meridian.data.time_coordinates."
+    },
+    {
+      "title": "meridian.data.time_coordinates.DateInterval",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/time_coordinates/DateInterval",
+      "description": "API reference documentation for meridian.data.time_coordinates.DateInterval."
+    },
+    {
+      "title": "meridian.data.time_coordinates.TimeCoordinates",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/time_coordinates/TimeCoordinates",
+      "description": "API reference documentation for meridian.data.time_coordinates.TimeCoordinates."
+    },
+    {
+      "title": "meridian.data.time_coordinates.normalize_date",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/time_coordinates/normalize_date",
+      "description": "API reference documentation for meridian.data.time_coordinates.normalize_date."
+    },
+    {
+      "title": "meridian.data.time_coordinates.normalize_date_interval",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/data/time_coordinates/normalize_date_interval",
+      "description": "API reference documentation for meridian.data.time_coordinates.normalize_date_interval."
+    },
+    {
+      "title": "Module: meridian.mlflow",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/mlflow",
+      "description": "API reference documentation for Module: meridian.mlflow."
+    },
+    {
+      "title": "Module: meridian.mlflow.autolog",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/mlflow/autolog",
+      "description": "API reference documentation for Module: meridian.mlflow.autolog."
+    },
+    {
+      "title": "meridian.mlflow.autolog.autolog",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/mlflow/autolog/autolog",
+      "description": "API reference documentation for meridian.mlflow.autolog.autolog."
+    },
+    {
+      "title": "Module: meridian.model",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model",
+      "description": "API reference documentation for Module: meridian.model."
+    },
+    {
+      "title": "Module : meridian.model.adstock_hill",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill",
+      "description": "API reference documentation for Module : meridian.model.adstock_hill."
+    },
+    {
+      "title": "meridian.model.adstock_hill.AdstockDecaySpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/AdstockDecaySpec",
+      "description": "API reference documentation for meridian.model.adstock_hill.AdstockDecaySpec."
+    },
+    {
+      "title": "meridian.model.adstock_hill.AdstockHillTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/AdstockHillTransformer",
+      "description": "API reference documentation for meridian.model.adstock_hill.AdstockHillTransformer."
+    },
+    {
+      "title": "meridian.model.adstock_hill.AdstockTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/AdstockTransformer",
+      "description": "API reference documentation for meridian.model.adstock_hill.AdstockTransformer."
+    },
+    {
+      "title": "meridian.model.adstock_hill.HillTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/HillTransformer",
+      "description": "API reference documentation for meridian.model.adstock_hill.HillTransformer."
+    },
+    {
+      "title": "meridian.model.adstock_hill.compute_decay_weights",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/compute_decay_weights",
+      "description": "API reference documentation for meridian.model.adstock_hill.compute_decay_weights."
+    },
+    {
+      "title": "meridian.model.adstock_hill.transform_non_negative_reals_distribution",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/adstock_hill/transform_non_negative_reals_distribution",
+      "description": "API reference documentation for meridian.model.adstock_hill.transform_non_negative_reals_distribution."
+    },
+    {
+      "title": "Module: meridian.model.context",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/context",
+      "description": "API reference documentation for Module: meridian.model.context."
+    },
+    {
+      "title": "meridian.model.context.ModelContext",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/context/ModelContext",
+      "description": "API reference documentation for meridian.model.context.ModelContext."
+    },
+    {
+      "title": "meridian.model.context.SaturationSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/context/SaturationSpec",
+      "description": "API reference documentation for meridian.model.context.SaturationSpec."
+    },
+    {
+      "title": "Module: meridian.model.eda",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda",
+      "description": "API reference documentation for Module: meridian.model.eda."
+    },
+    {
+      "title": "Module: meridian.model.eda.eda_engine",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_engine",
+      "description": "API reference documentation for Module: meridian.model.eda.eda_engine."
+    },
+    {
+      "title": "meridian.model.eda.eda_engine.EDAEngine",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_engine/EDAEngine",
+      "description": "API reference documentation for meridian.model.eda.eda_engine.EDAEngine."
+    },
+    {
+      "title": "meridian.model.eda.eda_engine.GeoLevelCheckOnNationalModelError",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_engine/GeoLevelCheckOnNationalModelError",
+      "description": "API reference documentation for meridian.model.eda.eda_engine.GeoLevelCheckOnNationalModelError."
+    },
+    {
+      "title": "Module: meridian.model.eda.eda_outcome",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome",
+      "description": "API reference documentation for Module: meridian.model.eda.eda_outcome."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.AnalysisArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/AnalysisArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.AnalysisArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.AnalysisLevel",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/AnalysisLevel",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.AnalysisLevel."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.CostPerMediaUnitArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/CostPerMediaUnitArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.CostPerMediaUnitArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.CriticalCheckEDAOutcomes",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/CriticalCheckEDAOutcomes",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.CriticalCheckEDAOutcomes."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.DataParameterRatioArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/DataParameterRatioArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.DataParameterRatioArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.EDACheckType",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/EDACheckType",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.EDACheckType."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.EDAFinding",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/EDAFinding",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.EDAFinding."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.EDAOutcome",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/EDAOutcome",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.EDAOutcome."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.EDASeverity",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/EDASeverity",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.EDASeverity."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.FindingCause",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/FindingCause",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.FindingCause."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.KpiInvariabilityArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/KpiInvariabilityArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.KpiInvariabilityArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.PairwiseCorrArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/PairwiseCorrArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.PairwiseCorrArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.PopulationCorrelationArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/PopulationCorrelationArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.PopulationCorrelationArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.PriorProbabilityArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/PriorProbabilityArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.PriorProbabilityArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.StandardDeviationArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/StandardDeviationArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.StandardDeviationArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.VIFArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/VIFArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.VIFArtifact."
+    },
+    {
+      "title": "meridian.model.eda.eda_outcome.VariableGeoTimeCollinearityArtifact",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_outcome/VariableGeoTimeCollinearityArtifact",
+      "description": "API reference documentation for meridian.model.eda.eda_outcome.VariableGeoTimeCollinearityArtifact."
+    },
+    {
+      "title": "Module: meridian.model.eda.eda_spec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec",
+      "description": "API reference documentation for Module: meridian.model.eda.eda_spec."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.AggregationConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/AggregationConfig",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.AggregationConfig."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.EDASpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/EDASpec",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.EDASpec."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.KpiInvariabilitySpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/KpiInvariabilitySpec",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.KpiInvariabilitySpec."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.PairwiseCorrSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/PairwiseCorrSpec",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.PairwiseCorrSpec."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.StandardDeviationSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/StandardDeviationSpec",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.StandardDeviationSpec."
+    },
+    {
+      "title": "meridian.model.eda.eda_spec.VIFSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/eda_spec/VIFSpec",
+      "description": "API reference documentation for meridian.model.eda.eda_spec.VIFSpec."
+    },
+    {
+      "title": "Module: meridian.model.eda.meridian_eda",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/meridian_eda",
+      "description": "API reference documentation for Module: meridian.model.eda.meridian_eda."
+    },
+    {
+      "title": "meridian.model.eda.meridian_eda.BoxplotSortingConfig",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/meridian_eda/BoxplotSortingConfig",
+      "description": "API reference documentation for meridian.model.eda.meridian_eda.BoxplotSortingConfig."
+    },
+    {
+      "title": "meridian.model.eda.meridian_eda.MeridianEDA",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/eda/meridian_eda/MeridianEDA",
+      "description": "API reference documentation for meridian.model.eda.meridian_eda.MeridianEDA."
+    },
+    {
+      "title": "Module: meridian.model.equations",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/equations",
+      "description": "API reference documentation for Module: meridian.model.equations."
+    },
+    {
+      "title": "meridian.model.equations.ModelEquations",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/equations/ModelEquations",
+      "description": "API reference documentation for meridian.model.equations.ModelEquations."
+    },
+    {
+      "title": "Module: meridian.model.knots",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/knots",
+      "description": "API reference documentation for Module: meridian.model.knots."
+    },
+    {
+      "title": "meridian.model.knots.KnotInfo",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/knots/KnotInfo",
+      "description": "API reference documentation for meridian.model.knots.KnotInfo."
+    },
+    {
+      "title": "meridian.model.knots.get_knot_info",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/knots/get_knot_info",
+      "description": "API reference documentation for meridian.model.knots.get_knot_info."
+    },
+    {
+      "title": "meridian.model.knots.l1_distance_weights",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/knots/l1_distance_weights",
+      "description": "API reference documentation for meridian.model.knots.l1_distance_weights."
+    },
+    {
+      "title": "Module: meridian.model.media",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media",
+      "description": "API reference documentation for Module: meridian.model.media."
+    },
+    {
+      "title": "meridian.model.media.MediaTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/MediaTensors",
+      "description": "API reference documentation for meridian.model.media.MediaTensors."
+    },
+    {
+      "title": "meridian.model.media.OrganicMediaTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/OrganicMediaTensors",
+      "description": "API reference documentation for meridian.model.media.OrganicMediaTensors."
+    },
+    {
+      "title": "meridian.model.media.OrganicRfTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/OrganicRfTensors",
+      "description": "API reference documentation for meridian.model.media.OrganicRfTensors."
+    },
+    {
+      "title": "meridian.model.media.RfTensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/RfTensors",
+      "description": "API reference documentation for meridian.model.media.RfTensors."
+    },
+    {
+      "title": "meridian.model.media.build_media_tensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/build_media_tensors",
+      "description": "API reference documentation for meridian.model.media.build_media_tensors."
+    },
+    {
+      "title": "meridian.model.media.build_organic_media_tensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/build_organic_media_tensors",
+      "description": "API reference documentation for meridian.model.media.build_organic_media_tensors."
+    },
+    {
+      "title": "meridian.model.media.build_organic_rf_tensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/build_organic_rf_tensors",
+      "description": "API reference documentation for meridian.model.media.build_organic_rf_tensors."
+    },
+    {
+      "title": "meridian.model.media.build_rf_tensors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/media/build_rf_tensors",
+      "description": "API reference documentation for meridian.model.media.build_rf_tensors."
+    },
+    {
+      "title": "Module: meridian.model.posterior_sampler",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/posterior_sampler",
+      "description": "API reference documentation for Module: meridian.model.posterior_sampler."
+    },
+    {
+      "title": "meridian.model.posterior_sampler.MCMCOOMError",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/posterior_sampler/MCMCOOMError",
+      "description": "API reference documentation for meridian.model.posterior_sampler.MCMCOOMError."
+    },
+    {
+      "title": "meridian.model.posterior_sampler.MCMCSamplingError",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/posterior_sampler/MCMCSamplingError",
+      "description": "API reference documentation for meridian.model.posterior_sampler.MCMCSamplingError."
+    },
+    {
+      "title": "meridian.model.posterior_sampler.PosteriorMCMCSampler",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/posterior_sampler/PosteriorMCMCSampler",
+      "description": "API reference documentation for meridian.model.posterior_sampler.PosteriorMCMCSampler."
+    },
+    {
+      "title": "Module: meridian.model.prior_distribution",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution",
+      "description": "API reference documentation for Module: meridian.model.prior_distribution."
+    },
+    {
+      "title": "meridian.model.prior_distribution.IndependentMultivariateDistribution",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution/IndependentMultivariateDistribution",
+      "description": "API reference documentation for meridian.model.prior_distribution.IndependentMultivariateDistribution."
+    },
+    {
+      "title": "meridian.model.prior_distribution.PriorDistribution",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution/PriorDistribution",
+      "description": "API reference documentation for meridian.model.prior_distribution.PriorDistribution."
+    },
+    {
+      "title": "meridian.model.prior_distribution.distributions_are_equal",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution/distributions_are_equal",
+      "description": "API reference documentation for meridian.model.prior_distribution.distributions_are_equal."
+    },
+    {
+      "title": "meridian.model.prior_distribution.lognormal_dist_from_mean_std",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution/lognormal_dist_from_mean_std",
+      "description": "API reference documentation for meridian.model.prior_distribution.lognormal_dist_from_mean_std."
+    },
+    {
+      "title": "meridian.model.prior_distribution.lognormal_dist_from_range",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_distribution/lognormal_dist_from_range",
+      "description": "API reference documentation for meridian.model.prior_distribution.lognormal_dist_from_range."
+    },
+    {
+      "title": "Module: meridian.model.prior_sampler",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_sampler",
+      "description": "API reference documentation for Module: meridian.model.prior_sampler."
+    },
+    {
+      "title": "meridian.model.prior_sampler.PriorDistributionSampler",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/prior_sampler/PriorDistributionSampler",
+      "description": "API reference documentation for meridian.model.prior_sampler.PriorDistributionSampler."
+    },
+    {
+      "title": "Module: meridian.model.spec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/spec",
+      "description": "API reference documentation for Module: meridian.model.spec."
+    },
+    {
+      "title": "meridian.model.spec.ModelSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/spec/ModelSpec",
+      "description": "API reference documentation for meridian.model.spec.ModelSpec."
+    },
+    {
+      "title": "โมดูล: meridian.model.transformers",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/transformers",
+      "description": "API reference documentation for โมดูล: meridian.model.transformers."
+    },
+    {
+      "title": "meridian.model.transformers.CenteringAndScalingTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/transformers/CenteringAndScalingTransformer",
+      "description": "API reference documentation for meridian.model.transformers.CenteringAndScalingTransformer."
+    },
+    {
+      "title": "meridian.model.transformers.KpiTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/transformers/KpiTransformer",
+      "description": "API reference documentation for meridian.model.transformers.KpiTransformer."
+    },
+    {
+      "title": "meridian.model.transformers.MediaTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/transformers/MediaTransformer",
+      "description": "API reference documentation for meridian.model.transformers.MediaTransformer."
+    },
+    {
+      "title": "meridian.model.transformers.TensorTransformer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/model/transformers/TensorTransformer",
+      "description": "API reference documentation for meridian.model.transformers.TensorTransformer."
+    },
+    {
+      "title": "Module: meridian.schema",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema",
+      "description": "API reference documentation for Module: meridian.schema."
+    },
+    {
+      "title": "Module: meridian.schema.mmm_proto_generator",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/mmm_proto_generator",
+      "description": "API reference documentation for Module: meridian.schema.mmm_proto_generator."
+    },
+    {
+      "title": "meridian.schema.mmm_proto_generator.create_mmm_proto",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/mmm_proto_generator/create_mmm_proto",
+      "description": "API reference documentation for meridian.schema.mmm_proto_generator.create_mmm_proto."
+    },
+    {
+      "title": "Module: meridian.schema.model_consumer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/model_consumer",
+      "description": "API reference documentation for Module: meridian.schema.model_consumer."
+    },
+    {
+      "title": "meridian.schema.model_consumer.ModelConsumer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/model_consumer/ModelConsumer",
+      "description": "API reference documentation for meridian.schema.model_consumer.ModelConsumer."
+    },
+    {
+      "title": "Module: meridian.schema.processors",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors",
+      "description": "API reference documentation for Module: meridian.schema.processors."
+    },
+    {
+      "title": "Module: meridian.schema.processors.budget_optimization_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/budget_optimization_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.budget_optimization_processor."
+    },
+    {
+      "title": "meridian.schema.processors.budget_optimization_processor.BudgetOptimizationProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/budget_optimization_processor/BudgetOptimizationProcessor",
+      "description": "API reference documentation for meridian.schema.processors.budget_optimization_processor.BudgetOptimizationProcessor."
+    },
+    {
+      "title": "meridian.schema.processors.budget_optimization_processor.BudgetOptimizationSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/budget_optimization_processor/BudgetOptimizationSpec",
+      "description": "API reference documentation for meridian.schema.processors.budget_optimization_processor.BudgetOptimizationSpec."
+    },
+    {
+      "title": "meridian.schema.processors.budget_optimization_processor.ChannelConstraintAbs",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/budget_optimization_processor/ChannelConstraintAbs",
+      "description": "API reference documentation for meridian.schema.processors.budget_optimization_processor.ChannelConstraintAbs."
+    },
+    {
+      "title": "meridian.schema.processors.budget_optimization_processor.ChannelConstraintRel",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/budget_optimization_processor/ChannelConstraintRel",
+      "description": "API reference documentation for meridian.schema.processors.budget_optimization_processor.ChannelConstraintRel."
+    },
+    {
+      "title": "Module: meridian.schema.processors.common",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/common",
+      "description": "API reference documentation for Module: meridian.schema.processors.common."
+    },
+    {
+      "title": "meridian.schema.processors.common.KpiType",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/common/KpiType",
+      "description": "API reference documentation for meridian.schema.processors.common.KpiType."
+    },
+    {
+      "title": "meridian.schema.processors.common.TargetMetric",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/common/TargetMetric",
+      "description": "API reference documentation for meridian.schema.processors.common.TargetMetric."
+    },
+    {
+      "title": "meridian.schema.processors.common.to_estimate",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/common/to_estimate",
+      "description": "API reference documentation for meridian.schema.processors.common.to_estimate."
+    },
+    {
+      "title": "Module: meridian.schema.processors.marketing_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.marketing_processor."
+    },
+    {
+      "title": "meridian.schema.processors.marketing_processor.IncrementalOutcomeSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor/IncrementalOutcomeSpec",
+      "description": "API reference documentation for meridian.schema.processors.marketing_processor.IncrementalOutcomeSpec."
+    },
+    {
+      "title": "meridian.schema.processors.marketing_processor.MarketingAnalysisSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor/MarketingAnalysisSpec",
+      "description": "API reference documentation for meridian.schema.processors.marketing_processor.MarketingAnalysisSpec."
+    },
+    {
+      "title": "meridian.schema.processors.marketing_processor.MarketingProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor/MarketingProcessor",
+      "description": "API reference documentation for meridian.schema.processors.marketing_processor.MarketingProcessor."
+    },
+    {
+      "title": "meridian.schema.processors.marketing_processor.MediaSummarySpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor/MediaSummarySpec",
+      "description": "API reference documentation for meridian.schema.processors.marketing_processor.MediaSummarySpec."
+    },
+    {
+      "title": "meridian.schema.processors.marketing_processor.ResponseCurveSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/marketing_processor/ResponseCurveSpec",
+      "description": "API reference documentation for meridian.schema.processors.marketing_processor.ResponseCurveSpec."
+    },
+    {
+      "title": "Module: meridian.schema.processors.model_fit_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_fit_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.model_fit_processor."
+    },
+    {
+      "title": "meridian.schema.processors.model_fit_processor.ModelFitProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_fit_processor/ModelFitProcessor",
+      "description": "API reference documentation for meridian.schema.processors.model_fit_processor.ModelFitProcessor."
+    },
+    {
+      "title": "meridian.schema.processors.model_fit_processor.ModelFitSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_fit_processor/ModelFitSpec",
+      "description": "API reference documentation for meridian.schema.processors.model_fit_processor.ModelFitSpec."
+    },
+    {
+      "title": "Module: meridian.schema.processors.model_kernel_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_kernel_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.model_kernel_processor."
+    },
+    {
+      "title": "meridian.schema.processors.model_kernel_processor.ModelKernelProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_kernel_processor/ModelKernelProcessor",
+      "description": "API reference documentation for meridian.schema.processors.model_kernel_processor.ModelKernelProcessor."
+    },
+    {
+      "title": "Module: meridian.schema.processors.model_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.model_processor."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.DatedSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/DatedSpec",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.DatedSpec."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.DatedSpecResolver",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/DatedSpecResolver",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.DatedSpecResolver."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.ModelProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/ModelProcessor",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.ModelProcessor."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.OptimizationSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/OptimizationSpec",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.OptimizationSpec."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.TrainedModel",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/TrainedModel",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.TrainedModel."
+    },
+    {
+      "title": "meridian.schema.processors.model_processor.ensure_trained_model",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/model_processor/ensure_trained_model",
+      "description": "API reference documentation for meridian.schema.processors.model_processor.ensure_trained_model."
+    },
+    {
+      "title": "Module: meridian.schema.processors.reach_frequency_optimization_processor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/reach_frequency_optimization_processor",
+      "description": "API reference documentation for Module: meridian.schema.processors.reach_frequency_optimization_processor."
+    },
+    {
+      "title": "ReachFrequencyOptimizationProcessor",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/reach_frequency_optimization_processor/ReachFrequencyOptimizationProcessor",
+      "description": "API reference documentation for ReachFrequencyOptimizationProcessor."
+    },
+    {
+      "title": "meridian.schema.processors.reach_frequency_optimization_processor.ReachFrequencyOptimizationSpec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/processors/reach_frequency_optimization_processor/ReachFrequencyOptimizationSpec",
+      "description": "API reference documentation for meridian.schema.processors.reach_frequency_optimization_processor.ReachFrequencyOptimizationSpec."
+    },
+    {
+      "title": "Module: meridian.schema.serde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde",
+      "description": "API reference documentation for Module: meridian.schema.serde."
+    },
+    {
+      "title": "Module: meridian.schema.serde.constants",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/constants",
+      "description": "API reference documentation for Module: meridian.schema.serde.constants."
+    },
+    {
+      "title": "Module: meridian.schema.serde.distribution",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/distribution",
+      "description": "API reference documentation for Module: meridian.schema.serde.distribution."
+    },
+    {
+      "title": "meridian.schema.serde.distribution.DistributionSerde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/distribution/DistributionSerde",
+      "description": "API reference documentation for meridian.schema.serde.distribution.DistributionSerde."
+    },
+    {
+      "title": "meridian.schema.serde.distribution.FunctionRegistry",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/distribution/FunctionRegistry",
+      "description": "API reference documentation for meridian.schema.serde.distribution.FunctionRegistry."
+    },
+    {
+      "title": "meridian.schema.serde.distribution.MeridianPriorDistributions",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/distribution/MeridianPriorDistributions",
+      "description": "API reference documentation for meridian.schema.serde.distribution.MeridianPriorDistributions."
+    },
+    {
+      "title": "meridian.schema.serde.distribution.MeridianPriorDistributions.FunctionRegistryEntry",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/distribution/MeridianPriorDistributions/FunctionRegistryEntry",
+      "description": "API reference documentation for meridian.schema.serde.distribution.MeridianPriorDistributions.FunctionRegistryEntry."
+    },
+    {
+      "title": "Module: meridian.schema.serde.eda_spec",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/eda_spec",
+      "description": "API reference documentation for Module: meridian.schema.serde.eda_spec."
+    },
+    {
+      "title": "meridian.schema.serde.eda_spec.Callable",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/eda_spec/Callable",
+      "description": "API reference documentation for meridian.schema.serde.eda_spec.Callable."
+    },
+    {
+      "title": "meridian.schema.serde.eda_spec.EDASpecSerde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/eda_spec/EDASpecSerde",
+      "description": "API reference documentation for meridian.schema.serde.eda_spec.EDASpecSerde."
+    },
+    {
+      "title": "Module: meridian.schema.serde.hyperparameters",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/hyperparameters",
+      "description": "API reference documentation for Module: meridian.schema.serde.hyperparameters."
+    },
+    {
+      "title": "meridian.schema.serde.hyperparameters.HyperparametersSerde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/hyperparameters/HyperparametersSerde",
+      "description": "API reference documentation for meridian.schema.serde.hyperparameters.HyperparametersSerde."
+    },
+    {
+      "title": "Module: meridian.schema.serde.inference_data",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/inference_data",
+      "description": "API reference documentation for Module: meridian.schema.serde.inference_data."
+    },
+    {
+      "title": "meridian.schema.serde.inference_data.InferenceDataSerde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/inference_data/InferenceDataSerde",
+      "description": "API reference documentation for meridian.schema.serde.inference_data.InferenceDataSerde."
+    },
+    {
+      "title": "Module: meridian.schema.serde.meridian_serde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/meridian_serde",
+      "description": "API reference documentation for Module: meridian.schema.serde.meridian_serde."
+    },
+    {
+      "title": "meridian.schema.serde.meridian_serde.MeridianSerde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/meridian_serde/MeridianSerde",
+      "description": "API reference documentation for meridian.schema.serde.meridian_serde.MeridianSerde."
+    },
+    {
+      "title": "meridian.schema.serde.meridian_serde.load_meridian",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/meridian_serde/load_meridian",
+      "description": "API reference documentation for meridian.schema.serde.meridian_serde.load_meridian."
+    },
+    {
+      "title": "meridian.schema.serde.meridian_serde.save_meridian",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/meridian_serde/save_meridian",
+      "description": "API reference documentation for meridian.schema.serde.meridian_serde.save_meridian."
+    },
+    {
+      "title": "Module: meridian.schema.serde.serde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/serde",
+      "description": "API reference documentation for Module: meridian.schema.serde.serde."
+    },
+    {
+      "title": "meridian.schema.serde.serde.Serde",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/serde/serde/Serde",
+      "description": "API reference documentation for meridian.schema.serde.serde.Serde."
+    },
+    {
+      "title": "Module: meridian.schema.utils",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils",
+      "description": "API reference documentation for Module: meridian.schema.utils."
+    },
+    {
+      "title": "Module: meridian.schema.utils.date_range_bucketing",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/date_range_bucketing",
+      "description": "API reference documentation for Module: meridian.schema.utils.date_range_bucketing."
+    },
+    {
+      "title": "meridian.schema.utils.date_range_bucketing.DateRangeBucketer",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/date_range_bucketing/DateRangeBucketer",
+      "description": "API reference documentation for meridian.schema.utils.date_range_bucketing.DateRangeBucketer."
+    },
+    {
+      "title": "meridian.schema.utils.date_range_bucketing.MonthlyDateRangeGenerator",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/date_range_bucketing/MonthlyDateRangeGenerator",
+      "description": "API reference documentation for meridian.schema.utils.date_range_bucketing.MonthlyDateRangeGenerator."
+    },
+    {
+      "title": "meridian.schema.utils.date_range_bucketing.QuarterlyDateRangeGenerator",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/date_range_bucketing/QuarterlyDateRangeGenerator",
+      "description": "API reference documentation for meridian.schema.utils.date_range_bucketing.QuarterlyDateRangeGenerator."
+    },
+    {
+      "title": "meridian.schema.utils.date_range_bucketing.YearlyDateRangeGenerator",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/date_range_bucketing/YearlyDateRangeGenerator",
+      "description": "API reference documentation for meridian.schema.utils.date_range_bucketing.YearlyDateRangeGenerator."
+    },
+    {
+      "title": "Module: meridian.schema.utils.proto_enum_converter",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/proto_enum_converter",
+      "description": "API reference documentation for Module: meridian.schema.utils.proto_enum_converter."
+    },
+    {
+      "title": "meridian.schema.utils.proto_enum_converter.ProtoEnumConverter",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/proto_enum_converter/ProtoEnumConverter",
+      "description": "API reference documentation for meridian.schema.utils.proto_enum_converter.ProtoEnumConverter."
+    },
+    {
+      "title": "Module: meridian.schema.utils.time_record",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/time_record",
+      "description": "API reference documentation for Module: meridian.schema.utils.time_record."
+    },
+    {
+      "title": "meridian.schema.utils.time_record.convert_times_to_date_intervals",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/time_record/convert_times_to_date_intervals",
+      "description": "API reference documentation for meridian.schema.utils.time_record.convert_times_to_date_intervals."
+    },
+    {
+      "title": "meridian.schema.utils.time_record.create_date_interval_pb",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/time_record/create_date_interval_pb",
+      "description": "API reference documentation for meridian.schema.utils.time_record.create_date_interval_pb."
+    },
+    {
+      "title": "meridian.schema.utils.time_record.dates_from_date_interval_proto",
+      "url": "https://developers.google.com/meridian/reference/api/meridian/schema/utils/time_record/dates_from_date_interval_proto",
+      "description": "API reference documentation for meridian.schema.utils.time_record.dates_from_date_interval_proto."
+    },
+    {
+      "title": "Module: meridian.protos",
+      "url": "https://developers.google.com/meridian/reference/api/proto",
+      "description": "API reference documentation for Module: meridian.protos."
+    }
+  ],
+  "GITHUB_REPOSITORY": [
+    {
+      "title": "CHANGELOG.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/CHANGELOG.md",
+      "description": "Official open-source raw Python code / documentation for CHANGELOG.md (Raw GitHub Source)."
+    },
+    {
+      "title": "CONTRIBUTING.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/CONTRIBUTING.md",
+      "description": "Official open-source raw Python code / documentation for CONTRIBUTING.md (Raw GitHub Source)."
+    },
+    {
+      "title": "README.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/README.md",
+      "description": "Official open-source raw Python code / documentation for README.md (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/Meridian_Getting_Started.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_Getting_Started.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/Meridian_Getting_Started.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/Meridian_Getting_Started_Jax.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_Getting_Started_Jax.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/Meridian_Getting_Started_Jax.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/Meridian_MLflow_Demo.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_MLflow_Demo.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/Meridian_MLflow_Demo.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/Meridian_RF_Demo.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_RF_Demo.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/Meridian_RF_Demo.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/Meridian_Scenario_Planner_Beta.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_Scenario_Planner_Beta.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/Meridian_Scenario_Planner_Beta.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/RF_Data_Simulation_for_Meridian.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/RF_Data_Simulation_for_Meridian.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/RF_Data_Simulation_for_Meridian.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "demo/ROI_mROI_Response_Curves.ipynb (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/demo/ROI_mROI_Response_Curves.ipynb",
+      "description": "Official open-source raw Python code / documentation for demo/ROI_mROI_Response_Curves.ipynb (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/analyzer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/analyzer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/analyzer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/analyzer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/analyzer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/analyzer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/optimizer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/optimizer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/optimizer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/optimizer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/optimizer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/optimizer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/checks.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/checks.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/checks.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/checks_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/checks_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/checks_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/configs.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/configs.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/configs.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/constants.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/results.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/results.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/results.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/results_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/results_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/results_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/reviewer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/reviewer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/reviewer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/review/reviewer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/review/reviewer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/review/reviewer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/summarizer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/summarizer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/summarizer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/summarizer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/summarizer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/summarizer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/summary_text.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/summary_text.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/summary_text.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/tensors.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/tensors.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/tensors.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/tensors_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/tensors_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/tensors_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/test_utils.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/test_utils.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/test_utils.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/visualizer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/visualizer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/visualizer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/analysis/visualizer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/analysis/visualizer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/analysis/visualizer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/backend/README.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/backend/README.md",
+      "description": "Official open-source raw Python code / documentation for meridian/backend/README.md (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/backend/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/backend/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/backend/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/backend/backend_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/backend/backend_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/backend/backend_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/backend/config.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/backend/config.py",
+      "description": "Official open-source raw Python code / documentation for meridian/backend/config.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/backend/test_utils.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/backend/test_utils.py",
+      "description": "Official open-source raw Python code / documentation for meridian/backend/test_utils.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/common/errors.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/common/errors.py",
+      "description": "Official open-source raw Python code / documentation for meridian/common/errors.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/constants.py",
+      "description": "Official open-source raw Python code / documentation for meridian/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/arg_builder.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/arg_builder.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/arg_builder.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/arg_builder_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/arg_builder_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/arg_builder_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/data_frame_input_data_builder.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/data_frame_input_data_builder.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/data_frame_input_data_builder.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/data_frame_input_data_builder_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/data_frame_input_data_builder_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/data_frame_input_data_builder_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/input_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/input_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/input_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/input_data_builder.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/input_data_builder.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/input_data_builder.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/input_data_builder_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/input_data_builder_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/input_data_builder_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/input_data_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/input_data_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/input_data_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/load.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/load.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/load.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/load_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/load_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/load_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/nd_array_input_data_builder.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/nd_array_input_data_builder.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/nd_array_input_data_builder.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/nd_array_input_data_builder_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/nd_array_input_data_builder_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/nd_array_input_data_builder_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/test_utils.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/test_utils.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/test_utils.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/time_coordinates.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/time_coordinates.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/time_coordinates.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/time_coordinates_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/time_coordinates_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/time_coordinates_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/unit_testing_data/README.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/unit_testing_data/README.md",
+      "description": "Official open-source raw Python code / documentation for meridian/data/unit_testing_data/README.md (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/validator.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/validator.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/validator.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/data/validator_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/data/validator_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/data/validator_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/mlflow/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/mlflow/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/mlflow/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/mlflow/autolog.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/mlflow/autolog.py",
+      "description": "Official open-source raw Python code / documentation for meridian/mlflow/autolog.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/mlflow/autolog_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/mlflow/autolog_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/mlflow/autolog_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/adstock_hill.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/adstock_hill.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/adstock_hill.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/adstock_hill_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/adstock_hill_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/adstock_hill_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/context.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/context.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/context.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/context_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/context_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/context_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/constants.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/eda_engine.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/eda_engine.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/eda_engine.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/eda_engine_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/eda_engine_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/eda_engine_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/eda_outcome.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/eda_outcome.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/eda_outcome.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/eda_outcome_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/eda_outcome_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/eda_outcome_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/eda_spec.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/eda_spec.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/eda_spec.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/meridian_eda.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/meridian_eda.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/meridian_eda.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/meridian_eda_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/meridian_eda_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/meridian_eda_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/sampling_eda_engine.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/sampling_eda_engine.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/sampling_eda_engine.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/eda/sampling_eda_engine_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/eda/sampling_eda_engine_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/eda/sampling_eda_engine_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/equations.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/equations.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/equations.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/equations_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/equations_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/equations_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/knots.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/knots.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/knots.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/knots_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/knots_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/knots_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/media.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/media.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/media.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/media_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/media_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/media_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/model.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/model.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/model.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/model_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/model_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/model_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/model_test_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/model_test_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/model_test_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/model_test_data_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/model_test_data_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/model_test_data_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/posterior_sampler.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/posterior_sampler.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/posterior_sampler.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/posterior_sampler_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/posterior_sampler_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/posterior_sampler_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/prior_distribution.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/prior_distribution.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/prior_distribution.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/prior_distribution_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/prior_distribution_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/prior_distribution_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/prior_sampler.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/prior_sampler.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/prior_sampler.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/prior_sampler_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/prior_sampler_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/prior_sampler_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/spec.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/spec.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/spec.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/spec_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/spec_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/spec_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/transformers.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/transformers.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/transformers.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/model/transformers_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/model/transformers_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/model/transformers_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/mmm_proto_generator.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/mmm_proto_generator.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/mmm_proto_generator.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/mmm_proto_generator_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/mmm_proto_generator_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/mmm_proto_generator_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/model_consumer.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/model_consumer.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/model_consumer.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/model_consumer_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/model_consumer_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/model_consumer_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/budget_optimization_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/budget_optimization_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/budget_optimization_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/common.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/common.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/common.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/common_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/common_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/common_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/marketing_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/marketing_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/marketing_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/model_fit_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/model_fit_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/model_fit_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/model_fit_processor_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/model_fit_processor_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/model_fit_processor_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/model_kernel_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/model_kernel_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/model_kernel_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/model_kernel_processor_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/model_kernel_processor_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/model_kernel_processor_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/model_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/model_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/model_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/processors/reach_frequency_optimization_processor.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/processors/reach_frequency_optimization_processor.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/processors/reach_frequency_optimization_processor.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/constants.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/distribution.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/distribution.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/distribution.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/eda_spec.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/eda_spec.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/eda_spec.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/eda_spec_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/eda_spec_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/eda_spec_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/function_registry.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/function_registry.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/function_registry.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/function_registry_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/function_registry_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/function_registry_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/hyperparameters.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/hyperparameters.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/hyperparameters.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/inference_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/inference_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/inference_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/inference_data_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/inference_data_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/inference_data_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/legacy_aks.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/legacy_aks.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/legacy_aks.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/marketing_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/marketing_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/marketing_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/marketing_data_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/marketing_data_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/marketing_data_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/meridian_serde.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/meridian_serde.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/meridian_serde.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/meridian_serde_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/meridian_serde_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/meridian_serde_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/serde.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/serde.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/serde.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/serde/test_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/serde/test_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/serde/test_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/test_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/test_data.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/test_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/__init__.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/date_range_bucketing.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/date_range_bucketing.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/date_range_bucketing.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/date_range_bucketing_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/date_range_bucketing_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/date_range_bucketing_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/proto_enum_converter.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/proto_enum_converter.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/proto_enum_converter.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/proto_enum_converter_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/proto_enum_converter_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/proto_enum_converter_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/time_record.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/time_record.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/time_record.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/schema/utils/time_record_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/schema/utils/time_record_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/schema/utils/time_record_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/templates/formatter.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/templates/formatter.py",
+      "description": "Official open-source raw Python code / documentation for meridian/templates/formatter.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/templates/formatter_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/templates/formatter_test.py",
+      "description": "Official open-source raw Python code / documentation for meridian/templates/formatter_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "meridian/version.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/meridian/version.py",
+      "description": "Official open-source raw Python code / documentation for meridian/version.py (Raw GitHub Source)."
+    },
+    {
+      "title": "proto/CHANGELOG.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/proto/CHANGELOG.md",
+      "description": "Official open-source raw Python code / documentation for proto/CHANGELOG.md (Raw GitHub Source)."
+    },
+    {
+      "title": "proto/README.md (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/proto/README.md",
+      "description": "Official open-source raw Python code / documentation for proto/README.md (Raw GitHub Source)."
+    },
+    {
+      "title": "proto/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/proto/__init__.py",
+      "description": "Official open-source raw Python code / documentation for proto/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "proto/setup.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/proto/setup.py",
+      "description": "Official open-source raw Python code / documentation for proto/setup.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/__init__.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/__init__.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/__init__.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/budget_opt_converters.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/budget_opt_converters.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/budget_opt_converters.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/budget_opt_converters_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/budget_opt_converters_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/budget_opt_converters_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/common.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/common.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/common.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/common_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/common_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/common_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/constants.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/converter.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/converter.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/converter.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/dataframe_model_converter.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/dataframe_model_converter.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/dataframe_model_converter.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/dataframe_model_converter_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/dataframe_model_converter_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/dataframe_model_converter_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/marketing_analyses_converters.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/marketing_analyses_converters.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/marketing_analyses_converters.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/marketing_analyses_converters_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/marketing_analyses_converters_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/marketing_analyses_converters_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/rf_opt_converters.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/rf_opt_converters.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/rf_opt_converters.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/dataframe/rf_opt_converters_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/dataframe/rf_opt_converters_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/dataframe/rf_opt_converters_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/mmm.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/mmm.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/mmm.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/mmm_converter.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/mmm_converter.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/mmm_converter.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/mmm_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/mmm_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/mmm_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/sheets.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/sheets.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/sheets.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/sheets_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/sheets_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/sheets_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/converters/test_data.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/converters/test_data.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/converters/test_data.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/linkingapi/__init__.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/linkingapi/__init__.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/linkingapi/__init__.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/linkingapi/constants.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/linkingapi/constants.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/linkingapi/constants.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/linkingapi/url_generator.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/linkingapi/url_generator.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/linkingapi/url_generator.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/linkingapi/url_generator_test.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/linkingapi/url_generator_test.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/linkingapi/url_generator_test.py (Raw GitHub Source)."
+    },
+    {
+      "title": "scenarioplanner/mmm_ui_proto_generator.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/scenarioplanner/mmm_ui_proto_generator.py",
+      "description": "Official open-source raw Python code / documentation for scenarioplanner/mmm_ui_proto_generator.py (Raw GitHub Source)."
+    },
+    {
+      "title": "schema.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/schema.py",
+      "description": "Official open-source raw Python code / documentation for schema.py (Raw GitHub Source)."
+    },
+    {
+      "title": "setup.py (Raw GitHub Source)",
+      "url": "https://raw.githubusercontent.com/google/meridian/main/setup.py",
+      "description": "Official open-source raw Python code / documentation for setup.py (Raw GitHub Source)."
+    }
+  ]
+}

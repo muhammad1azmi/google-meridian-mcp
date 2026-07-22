@@ -4,101 +4,20 @@ import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from "@modelcontextprotocol/sdk/types.js";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const MERIDIAN_DOC_SOURCES = {
-  OVERVIEW_AND_SETUP: [
-    {
-      title: "Meridian Framework Overview",
-      url: "https://developers.google.com/meridian/mmm",
-      description: "High-level overview of Google Meridian Bayesian Marketing Mix Modeling framework."
-    },
-    {
-      title: "Install Meridian",
-      url: "https://developers.google.com/meridian/docs/user-guide/installing",
-      description: "System requirements (Python 3.11-3.12, GPU/CUDA) and installation commands."
-    },
-    {
-      title: "Getting Started Notebook (Colab)",
-      url: "https://raw.githubusercontent.com/google/meridian/main/demo/Meridian_Getting_Started.ipynb",
-      description: "End-to-end Python demo walkthrough: loading data, fitting model, running diagnostics, and budget optimization."
-    }
-  ],
-  PRE_MODELING: [
-    {
-      title: "Pre-Modeling Introduction",
-      url: "https://developers.google.com/meridian/docs/pre-modeling/intro",
-      description: "Overview of data preparation, KPI selection, and channel definition."
-    },
-    {
-      title: "Data Requirements & Schema",
-      url: "https://developers.google.com/meridian/docs/pre-modeling/data-requirements",
-      description: "Specification for input CSV/DataFrame format: time, KPI, spend, impressions/GRP, controls."
-    },
-    {
-      title: "Geo vs National Modeling",
-      url: "https://developers.google.com/meridian/docs/pre-modeling/geo-vs-national",
-      description: "Guidance on choosing between geo-level and national-level granularity."
-    }
-  ],
-  MODELING_AND_FITTING: [
-    {
-      title: "ModelSpec Configuration",
-      url: "https://developers.google.com/meridian/docs/modeling/model-spec",
-      description: "Configuring ModelSpec: media channels, knots, holdout samples, and control variables."
-    },
-    {
-      title: "Bayesian Priors Setup",
-      url: "https://developers.google.com/meridian/docs/modeling/priors",
-      description: "Defining ROI priors, saturation priors, hill curves, and custom prior distributions."
-    },
-    {
-      title: "MCMC Sampling & Model Fit",
-      url: "https://developers.google.com/meridian/docs/modeling/model-fit",
-      description: "Fitting Meridian model using No-U-Turn Sampler (NUTS) MCMC."
-    }
-  ],
-  POST_MODELING_AND_OPTIMIZATION: [
-    {
-      title: "Post-Modeling & ROI Estimation",
-      url: "https://developers.google.com/meridian/docs/post-modeling/roi",
-      description: "Analyzing posterior ROI estimates, incremental KPI attribution, and channel responsiveness."
-    },
-    {
-      title: "Budget Optimizer & Response Curves",
-      url: "https://developers.google.com/meridian/docs/post-modeling/budget-optimization",
-      description: "Using BudgetOptimizer to calculate optimal media spend allocation across channels."
-    }
-  ],
-  API_REFERENCE: [
-    {
-      title: "Meridian Core API Root",
-      url: "https://developers.google.com/meridian/reference/api/meridian",
-      description: "Complete Python API reference for Google Meridian."
-    },
-    {
-      title: "meridian.model Module",
-      url: "https://developers.google.com/meridian/reference/api/meridian/model",
-      description: "API documentation for ModelSpec and Meridian model classes."
-    },
-    {
-      title: "meridian.analysis Module",
-      url: "https://developers.google.com/meridian/reference/api/meridian/analysis",
-      description: "API documentation for Analyzer, BudgetOptimizer, and scenario optimization."
-    }
-  ],
-  GITHUB_REPOSITORY: [
-    {
-      title: "Google Meridian GitHub Repository Root",
-      url: "https://github.com/google/meridian",
-      description: "Official open-source GitHub repository."
-    },
-    {
-      title: "meridian/model/spec.py (Raw Python)",
-      url: "https://raw.githubusercontent.com/google/meridian/main/meridian/model/spec.py",
-      description: "Raw Python source implementation of ModelSpec."
-    }
-  ]
-};
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+let MERIDIAN_DOC_SOURCES = {};
+try {
+  const catalogPath = path.join(__dirname, "master_catalog.json");
+  MERIDIAN_DOC_SOURCES = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
+} catch (e) {
+  console.error("Failed to load master_catalog.json:", e);
+}
 
 const server = new Server(
   {
@@ -123,7 +42,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           properties: {
             category: {
               type: "string",
-              description: "Category filter (ALL, OVERVIEW_AND_SETUP, PRE_MODELING, MODELING_AND_FITTING, POST_MODELING_AND_OPTIMIZATION, API_REFERENCE, GITHUB_REPOSITORY)",
+              description: "Category filter (ALL, OVERVIEW_AND_SETUP, PRE_MODELING, MODELING_AND_FITTING, POST_MODELING_AND_OPTIMIZATION, CAUSAL_INFERENCE_THEORY, ADVANCED_MODELING, API_REFERENCE, GITHUB_REPOSITORY)",
               default: "ALL"
             }
           }
@@ -131,7 +50,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
       {
         name: "search_doc_topics",
-        description: "Search Google Meridian documentation by topic or keyword (e.g., 'adstock', 'priors', 'budget optimizer', 'NUTS', 'R-hat').",
+        description: "Search Google Meridian documentation by topic or keyword (e.g., 'adstock', 'priors', 'budget optimizer', 'NUTS', 'R-hat', 'DAG', 'causal').",
         inputSchema: {
           type: "object",
           properties: {
@@ -192,7 +111,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     }
 
     if (matches.length === 0) {
-      return { content: [{ type: "text", text: `No direct matches found for topic '${query}'. Try searching for terms like 'data', 'priors', 'budget', 'install', or 'optimizer'.` }] };
+      return { content: [{ type: "text", text: `No direct matches found for topic '${query}'. Try searching for terms like 'data', 'priors', 'budget', 'install', 'causal', or 'optimizer'.` }] };
     }
 
     let text = `# Search Results for '${query}'\n\n`;
@@ -203,22 +122,33 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 
   if (name === "fetch_docs") {
-    const url = args?.url;
+    const targetUrl = args?.url;
+    if (!targetUrl) {
+      return { content: [{ type: "text", text: "Error: Missing required parameter 'url'." }] };
+    }
+
     try {
-      const res = await fetch(url);
-      const htmlOrText = await res.text();
-      return { content: [{ type: "text", text: `# Content for ${url}\n\n${htmlOrText.slice(0, 5000)}` }] };
-    } catch (err) {
-      return { content: [{ type: "text", text: `Error fetching URL: ${err.message}` }] };
+      const res = await fetch(targetUrl, {
+        headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GoogleMeridianMCP/1.0" },
+        redirect: "follow"
+      });
+      const text = await res.text();
+      return { content: [{ type: "text", text }] };
+    } catch (e) {
+      return { content: [{ type: "text", text: `Error fetching URL '${targetUrl}': ${e.message}` }] };
     }
   }
 
-  throw new Error(`Unknown tool: ${name}`);
+  throw new Error(`Tool not found: ${name}`);
 });
 
-async function run() {
+async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
+  console.error("Google Meridian MCP Server running on stdio");
 }
 
-run().catch(console.error);
+main().catch((error) => {
+  console.error("Fatal error in main():", error);
+  process.exit(1);
+});

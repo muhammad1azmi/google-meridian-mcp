@@ -7,7 +7,7 @@
       "category": {
         "type": "string",
         "title": "Category",
-        "description": "Filter by category: 'ALL', 'OVERVIEW_AND_SETUP', 'PRE_MODELING', 'MODELING_AND_FITTING', 'POST_MODELING_AND_OPTIMIZATION', 'ADVANCED_MODELING', 'API_REFERENCE', 'GITHUB_REPOSITORY'",
+        "description": "Filter by category: 'ALL', 'OVERVIEW_AND_SETUP', 'PRE_MODELING', 'MODELING_AND_FITTING', 'POST_MODELING_AND_OPTIMIZATION', 'CAUSAL_INFERENCE_THEORY', 'ADVANCED_MODELING', 'API_REFERENCE', 'GITHUB_REPOSITORY'",
         "default": "ALL"
       }
     },
