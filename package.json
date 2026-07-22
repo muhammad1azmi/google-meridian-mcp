@@ -1,0 +1,13 @@
+{
+  "name": "google-meridian-mcp",
+  "version": "1.0.0",
+  "description": "Google Meridian Documentation & API Knowledge MCP Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "list_doc_sources",
+  "description": "List all available Google Meridian documentation sources, user guides, API references, and GitHub repository links.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "title": "Category",
+        "description": "Filter by category: 'ALL', 'OVERVIEW_AND_SETUP', 'PRE_MODELING', 'MODELING_AND_FITTING', 'POST_MODELING_AND_OPTIMIZATION', 'ADVANCED_MODELING', 'API_REFERENCE', 'GITHUB_REPOSITORY'",
+        "default": "ALL"
+      }
+    },
+    "required": []
+  }
+}

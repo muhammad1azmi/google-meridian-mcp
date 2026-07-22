@@ -1,0 +1,17 @@
+{
+  "name": "search_doc_topics",
+  "description": "Search Google Meridian documentation by topic or keyword (e.g. 'adstock', 'priors', 'budget optimizer', 'NUTS', 'R-hat', 'geo model').",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "title": "Query",
+        "description": "Keyword or topic to search for."
+      }
+    },
+    "required": [
+      "query"
+    ]
+  }
+}

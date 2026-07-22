@@ -1,0 +1,23 @@
+{
+  "name": "fetch_docs",
+  "description": "Fetch and parse Google Meridian documentation, API reference pages, Jupyter notebooks, or GitHub code into clean Markdown.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "title": "Url",
+        "description": "The URL to fetch documentation from (developers.google.com or github.com)."
+      },
+      "extract_links": {
+        "type": "boolean",
+        "title": "Extract Links",
+        "description": "Whether to extract and list sub-page links found on the page.",
+        "default": true
+      }
+    },
+    "required": [
+      "url"
+    ]
+  }
+}
