@@ -4,7 +4,7 @@ Google Meridian MCP Server (google-meridian-mcp).
 Provides tools for AI assistants to discover, search, fetch, and parse
 Google Meridian documentation, API reference pages, and GitHub source code.
 Features enterprise structured logging, Prometheus metrics, rate limiting,
-and multi-transport HTTP/SSE JSON-RPC message routing.
+and pure ASGI SSE transport routing.
 """
 
 import os
@@ -20,8 +20,6 @@ from bs4 import BeautifulSoup
 import markdownify
 from mcp.server.fastmcp import FastMCP
 from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
-
-from doc_index import MERIDIAN_DOC_SOURCES, TOPIC_KEYWORDS
 
 # Configure Structured Logging
 logging.basicConfig(level=logging.INFO)
@@ -133,6 +131,7 @@ def list_doc_sources(category: str = "ALL") -> str:
     Returns:
         Formatted string listing available documentation sources and URLs.
     """
+    from doc_index import MERIDIAN_DOC_SOURCES
     start_time = time.time()
     category_upper = category.upper()
     
@@ -297,6 +296,7 @@ def search_doc_topics(query: str) -> str:
     Returns:
         Matching documentation links and category locations.
     """
+    from doc_index import MERIDIAN_DOC_SOURCES, TOPIC_KEYWORDS
     start_time = time.time()
     query_clean = query.strip().lower()
     matches = []
@@ -341,82 +341,49 @@ if __name__ == "__main__":
     if mode == "sse" or "PORT" in os.environ:
         _log_structured("INFO", f"Starting Google Meridian MCP Server in SSE Mode on 0.0.0.0:{port}")
         import uvicorn
-        from starlette.applications import Starlette
-        from starlette.responses import JSONResponse, PlainTextResponse, Response
-        from starlette.routing import Route, Mount
-        from starlette.middleware import Middleware
-        from starlette.middleware.base import BaseHTTPMiddleware
+        from starlette.responses import JSONResponse, Response
 
         sse_app = mcp.sse_app()
 
-        # IP Rate Limiting Middleware (100 req/min)
-        class RateLimitMiddleware(BaseHTTPMiddleware):
-            async def dispatch(self, request, call_next):
-                # Exclude health and root metrics from rate limiting
-                if request.url.path in ["/", "/health", "/metrics"]:
-                    return await call_next(request)
+        async def main_app(scope, receive, send):
+            if scope["type"] == "http":
+                path = scope["path"]
+                method = scope["method"]
 
-                client_ip = request.client.host if request.client else "unknown"
-                now = time.time()
-                
-                # Clean old timestamps
-                timestamps = IP_REQUEST_COUNTS.get(client_ip, [])
-                timestamps = [t for t in timestamps if now - t < RATE_LIMIT_WINDOW_SECONDS]
-                
-                if len(timestamps) >= RATE_LIMIT_MAX_REQUESTS:
-                    _log_structured("WARNING", "Rate limit exceeded", client_ip=client_ip)
-                    return JSONResponse(
-                        {"error": "Too many requests. Limit: 100 requests/minute."}, 
-                        status_code=429
-                    )
-                
-                timestamps.append(now)
-                IP_REQUEST_COUNTS[client_ip] = timestamps
-                return await call_next(request)
+                # Health Check
+                if path == "/health":
+                    response = JSONResponse({
+                        "status": "HEALTHY",
+                        "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
+                        "cache_items": len(list(CACHE_DIR.glob("*.md")))
+                    }, status_code=200)
+                    await response(scope, receive, send)
+                    return
 
-        async def homepage(request):
-            if request.method == "POST":
-                # Route POST to SSE message handler
-                return await sse_app(request.scope, request.receive, request.send)
-            return JSONResponse({
-                "status": "online",
-                "server": "google-meridian-mcp",
-                "mcp_version": "1.0.0",
-                "sse_endpoint": "/sse",
-                "messages_endpoint": "/messages/",
-                "metrics_endpoint": "/metrics",
-                "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
-                "cache_size_items": len(list(CACHE_DIR.glob("*.md")))
-            })
+                # Prometheus Metrics
+                if path == "/metrics":
+                    response = Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
+                    await response(scope, receive, send)
+                    return
 
-        async def sse_handler(request):
-            return await sse_app(request.scope, request.receive, request.send)
+                # Homepage Info
+                if path == "/" and method == "GET":
+                    response = JSONResponse({
+                        "status": "online",
+                        "server": "google-meridian-mcp",
+                        "mcp_version": "1.0.0",
+                        "sse_endpoint": "/sse",
+                        "messages_endpoint": "/messages/",
+                        "metrics_endpoint": "/metrics",
+                        "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
+                        "cache_size_items": len(list(CACHE_DIR.glob("*.md")))
+                    })
+                    await response(scope, receive, send)
+                    return
 
-        async def health(request):
-            return JSONResponse({
-                "status": "HEALTHY",
-                "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
-                "cache_items": len(list(CACHE_DIR.glob("*.md")))
-            }, status_code=200)
+            # Delegate all MCP requests (GET /sse, POST /messages, initialize, tools, etc.) to FastMCP sse_app!
+            await sse_app(scope, receive, send)
 
-        async def metrics(request):
-            return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
-
-        routes = [
-            Route("/", endpoint=homepage, methods=["GET", "POST"]),
-            Route("/sse", endpoint=sse_handler, methods=["GET", "POST"]),
-            Route("/messages", endpoint=sse_handler, methods=["POST"]),
-            Route("/messages/", endpoint=sse_handler, methods=["POST"]),
-            Route("/health", endpoint=health, methods=["GET"]),
-            Route("/metrics", endpoint=metrics, methods=["GET"]),
-            Mount("/mcp", app=sse_app)
-        ]
-
-        middleware = [
-            Middleware(RateLimitMiddleware)
-        ]
-
-        app = Starlette(debug=False, routes=routes, middleware=middleware)
-        uvicorn.run(app, host="0.0.0.0", port=port)
+        uvicorn.run(main_app, host="0.0.0.0", port=port)
     else:
         mcp.run()
