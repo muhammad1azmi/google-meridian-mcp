@@ -4,3 +4,5 @@ __pycache__/
 node_modules/
 .env
 .DS_Store
+deploy.ps1
+deploy.sh

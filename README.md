@@ -1,84 +1,56 @@
 # Google Meridian MCP Server (`google-meridian-mcp`)
 
-A knowledge and documentation MCP (Model Context Protocol) server for **Google Meridian** (Marketing Mix Modeling), providing AI assistants with structured access to official guides, API references, topic searching, and GitHub source code parsing.
+A high-performance Model Context Protocol (MCP) server for **Google Meridian** (Marketing Mix Modeling), providing AI assistants with structured access to official guides, API references, topic searching, and GitHub source code.
 
 ---
 
-## Domain & Cloud Hosting Configuration
+## Features
 
-- **Target Custom Subdomain**: `google-meridian.mcp.borobudur.ai`
-- **Google Cloud Project**: `borobudurai2005`
-- **Platform**: Google Cloud Run (Serverless SSE HTTP Transport)
-
----
-
-## Deployment to Google Cloud Run
-
-To deploy your server publicly under your `borobudur.ai` domain:
-
-### 1. Run Automated Deployment Script
-```powershell
-.\deploy.ps1
-```
-
-Or using Google Cloud CLI (`gcloud`):
-
-```bash
-# Set project
-gcloud config set project borobudurai2005
-
-# Build & Deploy
-gcloud builds submit --tag gcr.io/borobudurai2005/google-meridian-mcp .
-gcloud run deploy google-meridian-mcp --image gcr.io/borobudurai2005/google-meridian-mcp --platform managed --region us-central1 --allow-unauthenticated --port 8080
-
-# Map Custom Subdomain
-gcloud run domain-mappings create --service google-meridian-mcp --domain google-meridian.mcp.borobudur.ai --region us-central1
-```
-
-### 2. Configure DNS for `borobudur.ai`
-In your DNS management provider (Cloudflare, GoDaddy, Namecheap):
-
-1. Add a **CNAME** record:
-   - **Name / Host**: `google-meridian.mcp` (or `google-meridian.mcp.borobudur.ai`)
-   - **Target / Value**: `ghs.googlehosted.com` (or the CNAME provided by `gcloud domain-mappings`)
-
-Google Cloud automatically issues and renews an SSL/TLS certificate for `https://google-meridian.mcp.borobudur.ai`.
+- **Multi-Category Indexing**: Complete hierarchical index across User Guides, Pre-Modeling, Model Specification & Fitting, Post-Modeling & Optimization, Advanced Modeling, API References, and GitHub Code.
+- **Dynamic HTML ➔ Markdown Parser**: Converts Google Developer HTML documentation pages into clean, boilerplate-free Markdown.
+- **GitHub & Jupyter Notebook Parser**: Renders raw `.py` code files and `.ipynb` Jupyter demo notebooks into readable Markdown.
+- **Topic Search Engine (`search_doc_topics`)**: Instant keyword/topic matching for concepts like *Adstock*, *Hill curves*, *NUTS sampling*, *Prior calibration*, and *BudgetOptimizer*.
+- **Local Disk Cache**: Fast response times and offline reliability via `.cache/`.
 
 ---
 
-## Public Remote Registration in IDEs
+## Available Tools
 
-Once deployed, users anywhere in the world can add your public MCP server to their Cursor, Claude, or Gemini / Antigravity IDE:
-
-```json
-{
-  "mcpServers": {
-    "google-meridian": {
-      "url": "https://google-meridian.mcp.borobudur.ai/sse"
-    }
-  }
-}
-```
+| Tool | Parameters | Description |
+| :--- | :--- | :--- |
+| `list_doc_sources` | `category: str = "ALL"` | Lists documentation sources filtered by category. |
+| `fetch_docs` | `url: str, extract_links: bool = True` | Fetches, cleans, and converts doc pages / GitHub code to Markdown. |
+| `search_doc_topics` | `query: str` | Searches Meridian topics and returns direct matching URLs. |
 
 ---
 
-## Local Usage (Stdio Mode)
+## Usage & IDE Integration
 
-### Run locally
+### Local Usage (Stdio Mode)
+
+To run locally with Python:
+
 ```bash
 python server.py
 ```
 
-### Local `mcp_config.json`
+Add to your IDE's `mcp_config.json`:
+
 ```json
 {
   "mcpServers": {
     "google-meridian-mcp": {
       "command": "python",
       "args": [
-        "c:/Users/USER/Documents/google-meridian-mcp/server.py"
+        "path/to/google-meridian-mcp/server.py"
       ]
     }
   }
 }
 ```
+
+---
+
+## License
+
+MIT License. Open source and free for developer use.
