@@ -4,7 +4,7 @@ Google Meridian MCP Server (google-meridian-mcp).
 Provides tools for AI assistants to discover, search, fetch, and parse
 Google Meridian documentation, API reference pages, and GitHub source code.
 Features enterprise structured logging, Prometheus metrics, rate limiting,
-and pure ASGI SSE transport routing.
+and dual HTTP POST JSON-RPC + SSE stream protocol transport support.
 """
 
 import os
@@ -334,6 +334,107 @@ def search_doc_topics(query: str) -> str:
     return "\n".join(output)
 
 
+def _handle_jsonrpc_request(body: Dict[str, Any]) -> Dict[str, Any]:
+    """Handles direct HTTP POST JSON-RPC MCP requests (initialize, tools/list, tools/call)."""
+    req_id = body.get("id")
+    method = body.get("method")
+    params = body.get("params", {})
+
+    if method == "initialize":
+        return {
+            "jsonrpc": "2.0",
+            "id": req_id,
+            "result": {
+                "protocolVersion": "2024-11-05",
+                "capabilities": {
+                    "tools": {}
+                },
+                "serverInfo": {
+                    "name": "google-meridian-mcp",
+                    "version": "1.0.0"
+                }
+            }
+        }
+
+    if method == "notifications/initialized":
+        return {"jsonrpc": "2.0", "id": req_id, "result": {}}
+
+    if method == "tools/list":
+        return {
+            "jsonrpc": "2.0",
+            "id": req_id,
+            "result": {
+                "tools": [
+                    {
+                        "name": "list_doc_sources",
+                        "description": "Lists all available Google Meridian documentation sources, guides, and GitHub repositories.",
+                        "inputSchema": {
+                            "type": "object",
+                            "properties": {
+                                "category": {
+                                    "type": "string",
+                                    "description": "Filter by category ('ALL', 'OVERVIEW_AND_SETUP', 'PRE_MODELING', 'MODELING_AND_FITTING', 'POST_MODELING_AND_OPTIMIZATION', 'ADVANCED_MODELING', 'API_REFERENCE', 'GITHUB_REPOSITORY')",
+                                    "default": "ALL"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "fetch_docs",
+                        "description": "Fetches and parses Google Meridian documentation or code into clean Markdown.",
+                        "inputSchema": {
+                            "type": "object",
+                            "properties": {
+                                "url": {"type": "string", "description": "URL to fetch documentation from."},
+                                "extract_links": {"type": "boolean", "default": True}
+                            },
+                            "required": ["url"]
+                        }
+                    },
+                    {
+                        "name": "search_doc_topics",
+                        "description": "Searches Google Meridian documentation by topic or keyword.",
+                        "inputSchema": {
+                            "type": "object",
+                            "properties": {
+                                "query": {"type": "string", "description": "Keyword or topic to search for."}
+                            },
+                            "required": ["query"]
+                        }
+                    }
+                ]
+            }
+        }
+
+    if method == "tools/call":
+        tool_name = params.get("name")
+        tool_args = params.get("arguments", {})
+
+        if tool_name == "list_doc_sources":
+            res = list_doc_sources(category=tool_args.get("category", "ALL"))
+            return {"jsonrpc": "2.0", "id": req_id, "result": {"content": [{"type": "text", "text": res}]}}
+
+        if tool_name == "fetch_docs":
+            res = fetch_docs(url=tool_args.get("url", ""), extract_links=tool_args.get("extract_links", True))
+            return {"jsonrpc": "2.0", "id": req_id, "result": {"content": [{"type": "text", "text": res}]}}
+
+        if tool_name == "search_doc_topics":
+            res = search_doc_topics(query=tool_args.get("query", ""))
+            return {"jsonrpc": "2.0", "id": req_id, "result": {"content": [{"type": "text", "text": res}]}}
+
+        return {
+            "jsonrpc": "2.0",
+            "id": req_id,
+            "error": {"code": -32601, "message": f"Tool '{tool_name}' not found"}
+        }
+
+    return {
+        "jsonrpc": "2.0",
+        "id": req_id,
+        "result": {}
+    }
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8080"))
     mode = os.environ.get("MCP_MODE", "stdio").lower()
@@ -381,7 +482,27 @@ if __name__ == "__main__":
                     await response(scope, receive, send)
                     return
 
-            # Delegate all MCP requests (GET /sse, POST /messages, initialize, tools, etc.) to FastMCP sse_app!
+                # Direct HTTP POST JSON-RPC Request Handler (for clients sending POST directly)
+                if method == "POST":
+                    try:
+                        # Read request body
+                        body_bytes = b""
+                        while True:
+                            message = await receive()
+                            body_bytes += message.get("body", b"")
+                            if not message.get("more_body", False):
+                                break
+                        
+                        if body_bytes:
+                            body_json = json.loads(body_bytes.decode("utf-8"))
+                            jsonrpc_res = _handle_jsonrpc_request(body_json)
+                            response = JSONResponse(jsonrpc_res, status_code=200)
+                            await response(scope, receive, send)
+                            return
+                    except Exception as err:
+                        _log_structured("WARNING", f"Direct POST fallback error: {str(err)}")
+
+            # Delegate to FastMCP SSE stream transport
             await sse_app(scope, receive, send)
 
         uvicorn.run(main_app, host="0.0.0.0", port=port)
