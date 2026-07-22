@@ -77,16 +77,6 @@ npm start
 
 ---
 
-## 🧪 Testing
-
-Run the automated unit test suite:
-
-```bash
-python -m unittest test_server.py -v
-```
-
----
-
 ## 📄 License
 
 [MIT License](LICENSE). Open source and free for the community.
