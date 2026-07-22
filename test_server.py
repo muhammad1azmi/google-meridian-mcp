@@ -66,6 +66,7 @@ class TestMCPServerTools(unittest.TestCase):
         self.assertTrue(server._is_url_allowed("https://github.com/google/meridian"))
         self.assertTrue(server._is_url_allowed("https://raw.githubusercontent.com/google/meridian/main/README.md"))
         self.assertFalse(server._is_url_allowed("https://unauthorized-domain.com/hack"))
+        self.assertFalse(server._is_url_allowed("http://169.254.169.254/latest/meta-data/"))
 
     def test_fetch_docs_disallowed_domain(self):
         """Test fetch_docs error response for disallowed URLs."""

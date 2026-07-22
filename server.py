@@ -3,12 +3,14 @@ Google Meridian MCP Server (google-meridian-mcp).
 
 Provides tools for AI assistants to discover, search, fetch, and parse
 Google Meridian documentation, API reference pages, and GitHub source code.
-Supports both local stdio execution and public SSE cloud hosting (GCP Cloud Run).
+Features enterprise structured logging, Prometheus metrics, and rate limiting.
 """
 
 import os
 import json
 import re
+import time
+import logging
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 
@@ -16,8 +18,33 @@ import httpx
 from bs4 import BeautifulSoup
 import markdownify
 from mcp.server.fastmcp import FastMCP
+from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 
 from doc_index import MERIDIAN_DOC_SOURCES, TOPIC_KEYWORDS
+
+# Configure Structured Logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("google-meridian-mcp")
+
+# Prometheus Metrics
+TOOL_CALL_COUNTER = Counter(
+    "mcp_tool_calls_total", 
+    "Total number of MCP tool calls executed", 
+    ["tool_name", "status"]
+)
+TOOL_LATENCY_HISTOGRAM = Histogram(
+    "mcp_tool_execution_time_seconds", 
+    "Execution latency of MCP tools in seconds", 
+    ["tool_name"]
+)
+
+# Server Start Time for Uptime Tracking
+SERVER_START_TIME = time.time()
+
+# Simple In-Memory Rate Limiter (100 requests / min per IP)
+IP_REQUEST_COUNTS: Dict[str, List[float]] = {}
+RATE_LIMIT_MAX_REQUESTS = 100
+RATE_LIMIT_WINDOW_SECONDS = 60
 
 # Initialize FastMCP Server
 mcp = FastMCP("google-meridian-mcp")
@@ -32,8 +59,30 @@ ALLOWED_DOMAINS = [
     "raw.githubusercontent.com"
 ]
 
+def _log_structured(severity: str, message: str, **kwargs):
+    """Outputs structured JSON logs compatible with Google Cloud Logging."""
+    log_entry = {
+        "severity": severity,
+        "message": message,
+        "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "service": "google-meridian-mcp",
+        **kwargs
+    }
+    print(json.dumps(log_entry), flush=True)
+
 def _is_url_allowed(url: str) -> bool:
-    """Verifies that the requested URL belongs to authorized Google / GitHub domains."""
+    """Verifies that the requested URL belongs to authorized Google / GitHub domains and prevents SSRF."""
+    # Block internal IP ranges and Cloud metadata endpoints
+    blocked_patterns = [
+        r"169\.254\.169\.254", # Cloud Metadata Service
+        r"10\.\d+\.\d+\.\d+",
+        r"192\.168\.\d+\.\d+",
+        r"127\.0\.0\.1",
+        r"localhost"
+    ]
+    if any(re.search(pattern, url) for pattern in blocked_patterns):
+        return False
+
     return any(domain in url for domain in ALLOWED_DOMAINS)
 
 def _sanitize_filename(url: str) -> str:
@@ -84,24 +133,37 @@ def list_doc_sources(category: str = "ALL") -> str:
     Returns:
         Formatted string listing available documentation sources and URLs.
     """
+    start_time = time.time()
     category_upper = category.upper()
-    output = []
-    output.append("# Google Meridian Documentation Sources\n")
+    
+    try:
+        output = []
+        output.append("# Google Meridian Documentation Sources\n")
 
-    if category_upper in MERIDIAN_DOC_SOURCES:
-        sources_to_show = {category_upper: MERIDIAN_DOC_SOURCES[category_upper]}
-    else:
-        sources_to_show = MERIDIAN_DOC_SOURCES
+        if category_upper in MERIDIAN_DOC_SOURCES:
+            sources_to_show = {category_upper: MERIDIAN_DOC_SOURCES[category_upper]}
+        else:
+            sources_to_show = MERIDIAN_DOC_SOURCES
 
-    for cat, items in sources_to_show.items():
-        output.append(f"## Category: {cat.replace('_', ' ')}")
-        for item in items:
-            output.append(f"- **{item['title']}**")
-            output.append(f"  - URL: {item['url']}")
-            output.append(f"  - Summary: {item['description']}\n")
+        for cat, items in sources_to_show.items():
+            output.append(f"## Category: {cat.replace('_', ' ')}")
+            for item in items:
+                output.append(f"- **{item['title']}**")
+                output.append(f"  - URL: {item['url']}")
+                output.append(f"  - Summary: {item['description']}\n")
 
-    output.append("\n*Call `fetch_docs(url)` to get the markdown content of any URL above.*")
-    return "\n".join(output)
+        output.append("\n*Call `fetch_docs(url)` to get the markdown content of any URL above.*")
+        
+        duration = time.time() - start_time
+        TOOL_CALL_COUNTER.labels(tool_name="list_doc_sources", status="success").inc()
+        TOOL_LATENCY_HISTOGRAM.labels(tool_name="list_doc_sources").observe(duration)
+        _log_structured("INFO", "Executed list_doc_sources", category=category, duration_ms=round(duration * 1000, 2))
+        
+        return "\n".join(output)
+    except Exception as e:
+        TOOL_CALL_COUNTER.labels(tool_name="list_doc_sources", status="error").inc()
+        _log_structured("ERROR", f"Error in list_doc_sources: {str(e)}")
+        raise e
 
 
 @mcp.tool()
@@ -115,14 +177,23 @@ def fetch_docs(url: str, extract_links: bool = True) -> str:
     Returns:
         Parsed clean Markdown text of the documentation page.
     """
+    start_time = time.time()
+    
     if not _is_url_allowed(url):
+        TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="blocked_ssrf").inc()
+        _log_structured("WARNING", "Blocked unauthorized or SSRF URL attempt", requested_url=url)
         return f"Error: URL '{url}' is not from an allowed domain. Allowed domains: {ALLOWED_DOMAINS}"
 
     # Check local disk cache
     cache_file = CACHE_DIR / _sanitize_filename(url)
     if cache_file.exists():
         try:
-            return cache_file.read_text(encoding="utf-8")
+            content = cache_file.read_text(encoding="utf-8")
+            duration = time.time() - start_time
+            TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="cache_hit").inc()
+            TOOL_LATENCY_HISTOGRAM.labels(tool_name="fetch_docs").observe(duration)
+            _log_structured("INFO", "Served fetch_docs from cache", url=url, duration_ms=round(duration * 1000, 2))
+            return content
         except Exception:
             pass
 
@@ -143,6 +214,11 @@ def fetch_docs(url: str, extract_links: bool = True) -> str:
                 nb_data = response.json()
                 md_content = f"# Jupyter Notebook: {url}\n\n" + _parse_ipynb_cells(nb_data)
                 cache_file.write_text(md_content, encoding="utf-8")
+                
+                duration = time.time() - start_time
+                TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="success").inc()
+                TOOL_LATENCY_HISTOGRAM.labels(tool_name="fetch_docs").observe(duration)
+                _log_structured("INFO", "Fetched Jupyter Notebook doc", url=url, duration_ms=round(duration * 1000, 2))
                 return md_content
             except Exception:
                 pass
@@ -155,6 +231,11 @@ def fetch_docs(url: str, extract_links: bool = True) -> str:
             else:
                 md_content = f"# Source: {url}\n\n{raw_text}"
             cache_file.write_text(md_content, encoding="utf-8")
+            
+            duration = time.time() - start_time
+            TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="success").inc()
+            TOOL_LATENCY_HISTOGRAM.labels(tool_name="fetch_docs").observe(duration)
+            _log_structured("INFO", "Fetched raw code/markdown file", url=url, duration_ms=round(duration * 1000, 2))
             return md_content
 
         # Case 3: HTML Web Page (developers.google.com)
@@ -193,9 +274,16 @@ def fetch_docs(url: str, extract_links: bool = True) -> str:
 
         final_markdown = "\n\n".join(result)
         cache_file.write_text(final_markdown, encoding="utf-8")
+        
+        duration = time.time() - start_time
+        TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="success").inc()
+        TOOL_LATENCY_HISTOGRAM.labels(tool_name="fetch_docs").observe(duration)
+        _log_structured("INFO", "Fetched and parsed HTML doc", url=url, duration_ms=round(duration * 1000, 2))
         return final_markdown
 
     except Exception as e:
+        TOOL_CALL_COUNTER.labels(tool_name="fetch_docs", status="error").inc()
+        _log_structured("ERROR", f"Error fetching documentation: {str(e)}", url=url)
         return f"Error fetching documentation from '{url}': {str(e)}"
 
 
@@ -209,6 +297,7 @@ def search_doc_topics(query: str) -> str:
     Returns:
         Matching documentation links and category locations.
     """
+    start_time = time.time()
     query_clean = query.strip().lower()
     matches = []
 
@@ -223,6 +312,11 @@ def search_doc_topics(query: str) -> str:
                 if (query_clean in item["title"].lower() or 
                     query_clean in item["description"].lower()):
                     matches.append(item)
+
+    duration = time.time() - start_time
+    TOOL_CALL_COUNTER.labels(tool_name="search_doc_topics", status="success").inc()
+    TOOL_LATENCY_HISTOGRAM.labels(tool_name="search_doc_topics").observe(duration)
+    _log_structured("INFO", "Executed search_doc_topics", query=query, duration_ms=round(duration * 1000, 2))
 
     if not matches:
         return f"No direct documentation match found for topic '{query}'. Try searching for terms like 'data', 'priors', 'budget', 'install', 'MCMC', or 'visualizer'."
@@ -245,13 +339,36 @@ if __name__ == "__main__":
     mode = os.environ.get("MCP_MODE", "stdio").lower()
     
     if mode == "sse" or "PORT" in os.environ:
-        print(f"Starting Google Meridian MCP Server in SSE Mode on 0.0.0.0:{port}...")
+        _log_structured("INFO", f"Starting Google Meridian MCP Server in SSE Mode on 0.0.0.0:{port}")
         import uvicorn
         from starlette.applications import Starlette
-        from starlette.responses import JSONResponse, PlainTextResponse
+        from starlette.responses import JSONResponse, PlainTextResponse, Response
         from starlette.routing import Route
+        from starlette.middleware import Middleware
+        from starlette.middleware.base import BaseHTTPMiddleware
 
         sse_app = mcp.sse_app()
+
+        # IP Rate Limiting Middleware (100 req/min)
+        class RateLimitMiddleware(BaseHTTPMiddleware):
+            async def dispatch(self, request, call_next):
+                client_ip = request.client.host if request.client else "unknown"
+                now = time.time()
+                
+                # Clean old timestamps
+                timestamps = IP_REQUEST_COUNTS.get(client_ip, [])
+                timestamps = [t for t in timestamps if now - t < RATE_LIMIT_WINDOW_SECONDS]
+                
+                if len(timestamps) >= RATE_LIMIT_MAX_REQUESTS:
+                    _log_structured("WARNING", "Rate limit exceeded", client_ip=client_ip)
+                    return JSONResponse(
+                        {"error": "Too many requests. Limit: 100 requests/minute."}, 
+                        status_code=429
+                    )
+                
+                timestamps.append(now)
+                IP_REQUEST_COUNTS[client_ip] = timestamps
+                return await call_next(request)
 
         async def homepage(request):
             return JSONResponse({
@@ -259,18 +376,33 @@ if __name__ == "__main__":
                 "server": "google-meridian-mcp",
                 "mcp_version": "1.0.0",
                 "sse_endpoint": "/sse",
-                "messages_endpoint": "/messages/"
+                "messages_endpoint": "/messages/",
+                "metrics_endpoint": "/metrics",
+                "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
+                "cache_size_items": len(list(CACHE_DIR.glob("*.md")))
             })
 
         async def health(request):
-            return PlainTextResponse("OK", status_code=200)
+            return JSONResponse({
+                "status": "HEALTHY",
+                "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
+                "cache_items": len(list(CACHE_DIR.glob("*.md")))
+            }, status_code=200)
+
+        async def metrics(request):
+            return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
 
         routes = [
             Route("/", endpoint=homepage),
             Route("/health", endpoint=health),
+            Route("/metrics", endpoint=metrics),
         ] + sse_app.routes
 
-        app = Starlette(debug=False, routes=routes)
+        middleware = [
+            Middleware(RateLimitMiddleware)
+        ]
+
+        app = Starlette(debug=False, routes=routes, middleware=middleware)
         uvicorn.run(app, host="0.0.0.0", port=port)
     else:
         mcp.run()
