@@ -9,7 +9,18 @@ A **Cloud-Agnostic, First-Principles Model Context Protocol (MCP) server** for *
 
 It empowers data scientists and AI assistants (Cursor, Claude Desktop, Antigravity) to create, audit, calibrate, and optimize mathematically sound, causally valid Marketing Mix Models with zero cloud vendor lock-in.
 
-📖 **Source of Truth**: Read [FIRST_PRINCIPLES_MMM.md](FIRST_PRINCIPLES_MMM.md) for full mathematical derivations, causal DAG rules, control points, and workflow iteration loops.
+---
+
+## 💡 Why First Principles Over Rigid Scripts?
+
+Most assistant implementations rely on hardcoded procedural scripts (`SKILL.md`). In real-world data science, rigid scripts break because **every business, industry, and marketing dataset is unique**:
+- A retail brand with 50 DMAs operates differently than a B2B SaaS startup with national data.
+- App install targets (`NON_REVENUE`) require different priors than revenue models (`REVENUE`).
+- Specific channel CPMs, flighting patterns, and Lift Tests vary across campaigns.
+
+**First Principles never change.** Causal identification (DAGs), carryover/saturation physics (Adstock & Hill curves), Bayesian probability calibration, NUTS MCMC geometry ($\hat{R} < 1.05$), and KKT convex budget optimization apply universally to every dataset on Earth.
+
+By anchoring this MCP server in **First Principles & Dynamic Data Science Tools**, the co-pilot adapts seamlessly to any specific edge case while guaranteeing mathematical rigor.
 
 ---
 
@@ -33,14 +44,16 @@ It empowers data scientists and AI assistants (Cursor, Claude Desktop, Antigravi
 
 ---
 
-## 🛠️ Complete MCP Tool Suite (9 Tools)
+## 🛠️ Complete MCP Tool Suite (11 Tools)
 
 | Category | Tool | Parameters | Description |
 | :--- | :--- | :--- | :--- |
-| **Control Points** | `get_control_point_guide` | `control_point: str` | Operational parameters, math formulas, and recommended bounds for all 7 control points. |
+| **Control Points** | `get_control_point_guide` | `control_point: str` | Operational parameters, math formulas, and bounds for all control points. |
 | **Workflow** | `get_mmm_workflow_guide` | `phase: str` | Decision trees and iteration rules for the 5 modeling phases & 3 iteration loops. |
 | **Prior Math Engine** | `calculate_bayesian_prior` | `point_estimate, ci_lower, ci_upper` | Converts 95% CIs from Lift Tests into exact Meridian LogNormal ($\mu, \sigma$) prior parameters. |
 | **Spec Auditor** | `audit_model_first_principles` | `config_json: str` | Audits model specs for identifiability, knot density, prior variance, and Hill parameter bounds. |
+| **EDA Engine** | `run_eda_checks` | `config_json: str` | Pre-modeling EDA checks (`VIFSpec`, `PairwiseCorrSpec`, `DataParameterRatioArtifact`). |
+| **Model Reviewer** | `run_model_review_checks` | `check_type: str` | Diagnostic checks (`BayesianPPPCheck`, `PriorPosteriorShiftCheck`, `ImplausibleROICheck`). |
 | **Code Synthesizer** | `synthesize_meridian_code` | `pipeline_stage: str` | Generates clean, portable, cloud-agnostic Python code for Google Meridian pipelines. |
 | **Data Utility** | `generate_schema_template` | `n_weeks, n_geos, n_channels` | Generates synthetic CSV schema templates matching Meridian's input format. |
 | **Documentation** | `list_doc_sources` | `category: str` | Lists documentation sources filtered by category. |
