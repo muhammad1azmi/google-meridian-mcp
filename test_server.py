@@ -3,6 +3,7 @@ Unit and Integration Tests for Google Meridian MCP Server.
 """
 
 import unittest
+import json
 from doc_index import MERIDIAN_DOC_SOURCES, TOPIC_KEYWORDS
 import server
 
@@ -94,5 +95,74 @@ class TestMCPServerTools(unittest.TestCase):
         self.assertIn("```python\nimport meridian\nprint('hello')\n```", rendered)
 
 
+class TestFirstPrinciplesDataScienceTools(unittest.TestCase):
+
+    def test_get_control_point_guide(self):
+        """Test get_control_point_guide for all control points and specific point."""
+        res_all = server.get_control_point_guide("ALL")
+        self.assertIn("Control Point 1: Data Inputs", res_all)
+        self.assertIn("Control Point 5: Bayesian Prior Calibration", res_all)
+
+        res_priors = server.get_control_point_guide("bayesian_priors")
+        self.assertIn("Meridian Control Point Guide: BAYESIAN_PRIORS", res_priors)
+
+    def test_get_mmm_workflow_guide(self):
+        """Test get_mmm_workflow_guide for workflow phases and iteration loops."""
+        res_wf = server.get_mmm_workflow_guide("ALL")
+        self.assertIn("Phase 1: Data Alignment", res_wf)
+        self.assertIn("Loop A: Technical Convergence Check", res_wf)
+        self.assertIn("Loop C: Lift Test Alignment", res_wf)
+
+        res_loop_a = server.get_mmm_workflow_guide("loop_a_convergence")
+        self.assertIn("Loop A: Technical Convergence Check", res_loop_a)
+
+    def test_calculate_bayesian_prior(self):
+        """Test calculate_bayesian_prior math derivation and code generation."""
+        res = server.calculate_bayesian_prior(
+            experiment_type="geo_lift",
+            point_estimate=2.0,
+            ci_lower=1.2,
+            ci_upper=2.8
+        )
+        self.assertIn("Calculated Meridian LogNormal Prior Parameters", res)
+        self.assertIn("scale=", res)
+        self.assertIn("loc=", res)
+
+        # Invalid bounds test
+        res_err = server.calculate_bayesian_prior(point_estimate=-1.0, ci_lower=1.0, ci_upper=2.0)
+        self.assertIn("Error:", res_err)
+
+    def test_audit_model_first_principles(self):
+        """Test audit_model_first_principles for knot distance and prior SD risks."""
+        config = json.dumps({"knot_distance_weeks": 2, "prior_sd": 1.5})
+        audit = server.audit_model_first_principles(config)
+        self.assertIn("CRITICAL: Knot distance (2 weeks) is too small", audit)
+        self.assertIn("WARNING: Prior standard deviation (1.5) is too uninformative", audit)
+
+    def test_run_eda_checks(self):
+        """Test run_eda_checks output."""
+        res = server.run_eda_checks()
+        self.assertIn("VIFSpec", res)
+        self.assertIn("DataParameterRatioArtifact", res)
+
+    def test_run_model_review_checks(self):
+        """Test run_model_review_checks output."""
+        res = server.run_model_review_checks("ALL")
+        self.assertIn("BayesianPPPCheck", res)
+        self.assertIn("PriorPosteriorShiftCheck", res)
+
+    def test_synthesize_meridian_code(self):
+        """Test synthesize_meridian_code python output."""
+        code_full = server.synthesize_meridian_code("FULL_PIPELINE")
+        self.assertIn("from meridian.data import input_data", code_full)
+        self.assertIn("from meridian.analysis import optimizer", code_full)
+
+    def test_generate_schema_template(self):
+        """Test generate_schema_template CSV generation."""
+        csv_out = server.generate_schema_template(n_weeks=52, n_geos=1, n_channels=3)
+        self.assertIn("time,geo,kpi,spend_channel_1,impressions_channel_1", csv_out)
+
+
 if __name__ == "__main__":
     unittest.main()
+
